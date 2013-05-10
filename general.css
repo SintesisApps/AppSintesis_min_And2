@@ -44,8 +44,8 @@ body{
 	-moz-border-radius:15px 15px 15px 15px; 
 	-webkit-border-radius:15px 15px 15px 15px; 
 	border:1px solid #707070;
-/*							margin-top:54px;
-*/}
+	margin-top:54px;
+}
 
 .HeadDialogoInfo{
 	margin-left:-15px;
@@ -410,9 +410,8 @@ body{
 @media screen and (min-width: 0px) and (max-width: 500px) {
 	
 	#home{
-		height:auto;
-/*		height:480px;
-*/	}
+		height:480px;
+	}
 	/*Slide miniaturas*/
 
 	.ContenedorSlideMiniaturas {
@@ -566,21 +565,19 @@ width:100%;
 .DivVertical{
 	width:296px;
 	height:auto;
-	overflow:atuo;
 	}
 .ContenedorSlideVertical {
 	width: 296px;
 	background: rgba(204,204,204,.4);
-/*	position:absolute;
-   					 position: relative;
-*/	/*margin: 7px;*/
+    position: relative;
+	/*margin: 7px;*/
 	margin-left:12px;
 	margin-right:12px;
 	text-align: center;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	margin-bottom:50px;
-height:250px;
+height:200px;
 
 
 
@@ -682,7 +679,6 @@ height:250px;
 /*Slide Principal Plaza*/
 .SeccionSeccion{
 	position:absolute;
-				overflow:scroll;
 	top:44px;
 	width:100%;
 	text-align:center;
@@ -694,7 +690,7 @@ height:250px;
 /*	height:212px;
 */	width: 296px;
 	margin-left:10px;
-					overflow-y: scroll;
+	overflow-y: auto;
 	/*overflow: auto;*/
 				-webkit-overflow-scrolling: touch;
 	padding-top:20px;
@@ -706,15 +702,12 @@ height:250px;
 	vertical-align:top;  
 	height:212px;  
 	margin:auto;
-/*					overflow: auto;
-*/
-				overflow: scroll;
+	overflow: auto;
 	}
 .ContenidoPrincipalSeccion{
-	display:inline-block;
-					overflow-y: scroll;
-/*	overflow:hidden;
-*/	background: rgba(204,204,204,.4); 
+	display:inline-block; 
+	overflow:hidden;
+	background: rgba(204,204,204,.4); 
 	height:214px; 
 	padding:0px;
 	width:143px; 
