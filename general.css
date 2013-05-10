@@ -575,7 +575,7 @@ width:100%;
 	margin-left:12px;
 	margin-right:12px;
 	text-align: center;
-	overflow: auto;
+	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
 	margin-bottom:50px;
 height:200px;
