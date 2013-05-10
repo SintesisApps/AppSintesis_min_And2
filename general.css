@@ -796,6 +796,7 @@ width:100%;
 	z-index:3;
 	overflow:auto;
 	height:auto;
+	-webkit-overflow-scrolling: touch;
 
 	}
 .NotaContenedor {
@@ -806,6 +807,7 @@ width:100%;
 	margin-left:0px;
 	overflow:auto;
 	height:auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 
@@ -872,6 +874,7 @@ width:100%;
 	margin-right:10px;
 		overflow:auto;
 	height:auto;
+	-webkit-overflow-scrolling: touch;
 
 }
 
