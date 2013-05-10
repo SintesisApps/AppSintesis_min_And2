@@ -497,9 +497,9 @@ width:100%;
 .PublicidadSlidePrincipal {
 	display:inline-block;
 	width:320px;
-	height:auto;
-/*	height:242px;
-*/	vertical-align:top;
+/*	height:auto;
+*/	height:242px;
+	vertical-align:top;
 	overflow:hidden;
 }
 .SlidePrincipalImagen img {
@@ -611,6 +611,7 @@ width:100%;
 	width:100%;
 	margin-top:7px;
 	height:135.7px;
+	overflow:auto;
 	
 }
 .PublicidadSlideVertical img{
@@ -796,7 +797,7 @@ width:100%;
 	z-index:3;
 	overflow:auto;
 	height:auto;
-
+	-webkit-overflow-scrolling: touch;
 	}
 .NotaContenedor {
 	background: rgba(204,204,204,.4);
@@ -806,7 +807,7 @@ width:100%;
 	margin-left:0px;
 	overflow:auto;
 	height:auto;
-}
+	-webkit-overflow-scrolling: touch;}
 
 
 .NotaContenedor img {
@@ -860,8 +861,8 @@ width:100%;
 	padding-top:0px;
 	width:95%;
 	text-align:justify;
-	padding-bottom:10px;
-	margin-left:10px;
+/*	padding-bottom:10px;
+*/	margin-left:10px;
 	margin-top:10px;
 	margin-right:10px;
 	overflow:auto;
@@ -907,6 +908,8 @@ width:100%;
 	text-align:center;
 	width:100%;
 	padding-bottom:44px;
+					overflow:auto;
+					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
 	}
 .NotaExtraContenedor{
 	text-align:left;
@@ -916,7 +919,8 @@ width:100%;
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-/*	margin-bottom:51px;
+					overflow:auto;
+					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
 */	}
 .NotaExtraContenedor a{
 	color: inherit;
