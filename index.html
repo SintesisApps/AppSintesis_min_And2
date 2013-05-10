@@ -794,7 +794,7 @@ function LeerNota(id)
     <!--Slide Principal Plaza-->
     <div class="ContenedorPrincipalSeccion">
     
-      <div style="float:left;margin-right:-300px;">
+      <div style="float:left;margin-right:-30000px;">
         
         <!--<div class="SubContenedorPrincipalSeccion"> 
             <a href="#nota">
@@ -1217,6 +1217,18 @@ return false;
   
   });
   
+  
+  jQuery(document).ready(function($) {
+    $(".PublicidadSlideVertical").royalSlider({
+    	// general options go gere
+    	autoScaleSlider: true,
+    	thumbs: {
+    		// thumbnails options go gere
+    		spacing: 10,
+    		arrowsAutoHide: true
+    	}
+    });  
+});
     /* 3D Flow demos */
 /*$(function(){
 
