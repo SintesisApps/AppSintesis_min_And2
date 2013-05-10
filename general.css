@@ -825,6 +825,9 @@ width:100%;
 	padding-top:10px;
 	margin-left:10px;
 	margin-right:10px;
+		overflow:auto;
+	height:auto;
+
 }
 
 .NotaSumario{
@@ -835,6 +838,9 @@ width:100%;
 	color:#666666;
 	margin-left:10px;
 	margin-right:10px;
+		overflow:auto;
+	height:auto;
+
 }
 .NotaAutor{
 	text-align:left;
@@ -864,6 +870,9 @@ width:100%;
 	margin-left:10px;
 	margin-top:10px;
 	margin-right:10px;
+		overflow:auto;
+	height:auto;
+
 }
 
 
