@@ -5,201 +5,89 @@
 <title>Síntesis</title>
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=.5, maximum-scale=1.0, user-scalable=yes" name="viewport" />
 
-<link href="general.css" rel="stylesheet">
-<link href="css/transiciones.css" rel="stylesheet">
-<link href="css/alerta.css" rel="stylesheet" type="text/css" />
+<link href="http://166.78.193.53/APPSintesis/general.css" rel="stylesheet">
+<link href="http://166.78.193.53/APPSintesis/css/transiciones.css" rel="stylesheet">
+<link href="http://166.78.193.53/APPSintesis/css/alerta.css" rel="stylesheet" type="text/css" />
 <script src="phonegap.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 <!--Slide-->
-<link href="slide/royalslider.css" rel="stylesheet">
-<script type="text/javascript" async src="slide/ga.js"></script> 
-<script src="slide/jquery.royalslider.min.js?v=9.3.5"></script>
+<link href="http://166.78.193.53/APPSintesis/slide/royalslider.css" rel="stylesheet">
+<script type="text/javascript" async src="http://166.78.193.53/APPSintesis/slide/ga.js"></script>
+<script src="http://166.78.193.53/APPSintesis/slide/jquery.royalslider.min.js?v=9.3.5"></script>
+
+<link type="text/css" rel="stylesheet" href="mapa/style.css" />
+<!--<link href="slide/royalslider.css" rel="stylesheet">
+<script type="text/javascript" async src="slide/ga.js"></script>
+<script src="slide/jquery.royalslider.min.js?v=9.3.5"></script>-->
 
 <!--Slide-->
 	<link href="js/galeria/photoswipe.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="js/galeria/lib/klass.min.js"></script>
 	<script type="text/javascript" src="js/galeria/code.photoswipe-3.0.4.min.js"></script>
-	<!--<script type="text/javascript">
-
-		(function(window, PhotoSwipe){
-		
-			document.addEventListener('DOMContentLoaded', function(){
-			
-				var
-					options = {},
-					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
-					
-					
-					// onBeforeShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeShow, function(e){
-						console.log('onBeforeShow');
-					});
-					
-					// onShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onShow, function(e){
-						console.log('onShow');
-					});
-					
-					// onBeforeHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeHide, function(e){
-						console.log('onBeforeHide');
-					});
-					
-					// onHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onHide, function(e){
-						console.log('onHide');
-					});
-					
-					// onDisplayImage
-					instance.addEventHandler(PhotoSwipe.EventTypes.onDisplayImage, function(e){
-						console.log('onDisplayImage{');
-						console.log('onDisplayImage - e.action = ' + e.action);
-						console.log('onDisplayImage - e.index = ' + e.index);
-						console.log(instance.getCurrentImage());
-						console.log('onDisplayImage}');
-					});
-					
-					// onResetPosition
-					instance.addEventHandler(PhotoSwipe.EventTypes.onResetPosition, function(e){
-						console.log('onResetPosition');
-					});
-					
-					// onSlideshowStart
-					instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStart, function(e){
-						console.log('onSlideshowStart');
-					});
-					
-					// onSlideshowStop
-					instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStop, function(e){
-						console.log('onSlideshowStop');
-					});
-					
-					// onTouch
-					instance.addEventHandler(PhotoSwipe.EventTypes.onTouch, function(e){
-						console.log('onTouch{');
-						console.log('onTouch - e.action = ' + e.action);
-						console.log('onTouch - e.point = ');
-						console.log(e.point);
-						console.log('onTouch}');
-					});
-					
-					// onBeforeCaptionAndToolbarShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarShow, function(e){
-						console.log('onBeforeCaptionAndToolbarShow');
-					});
-					
-					// onCaptionAndToolbarShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarShow, function(e){
-						console.log('onCaptionAndToolbarShow');
-					});
-					
-					// onBeforeCaptionAndToolbarHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarHide, function(e){
-						console.log('onBeforeCaptionAndToolbarHide');
-					});
-					
-					// onCaptionAndToolbarHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarHide, function(e){
-						console.log('onCaptionAndToolbarHide');
-					});
-					
-					// onToolbarTap
-					instance.addEventHandler(PhotoSwipe.EventTypes.onToolbarTap, function(e){
-						console.log('onToolbarTap');
-						console.log(e);
-					});
-					
-					// onBeforeZoomPanRotateShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateShow, function(e){
-						console.log('onBeforeZoomPanRotateShow');
-					});
-					
-					// onZoomPanRotateShow
-					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateShow, function(e){
-						console.log('onZoomPanRotateShow');
-					});
-					
-					// onBeforeZoomPanRotateHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateHide, function(e){
-						console.log('onBeforeZoomPanRotateHide');
-					});
-					
-					// onZoomPanRotateHide
-					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateHide, function(e){
-						console.log('onZoomPanRotateHide');
-					});
-					
-					// onZoomPanRotateTransform
-					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateTransform, function(e){
-						console.log('onZoomPanRotateTransform');
-						console.log(e);
-					});
-					
-			}, false);
-			
-			
-		}(window, window.Code.PhotoSwipe));
-		
-	</script>-->
-    
-    
 <!-- geolocalizacion -->
-<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?sensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() 
-	  {
-		  document.addEventListener("deviceready",function()
-		  {
-			  //coneccion a  geolocalizacion
-			  navigator.geolocation.getCurrentPosition(function (loc) 
-			  {
-			 
-			  
-			  var myLatlng = new google.maps.LatLng(19.04327,-98.22035);
-			  //var myLatlng = new google.maps.LatLng(loc.coords.latitude,loc.coords.longitude);
-			  var mapOptions = {
-					zoom: 14,
-					center: myLatlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-			  }
-			  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-			
-			  var marker = new google.maps.Marker({
-				  position: myLatlng,
-				  map: map,
-				  title:""
-			  });
-			  }, function (err){
-				  navigator.notification.alert(err.code, null, 'Error', 'Error!!');
-				  });
-		  }, false);
-      }
-    </script>
-    <!-- carga de noticias -->
-    <script>
-			$(document).ready(function() {
-				
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
 
+
+    <script type="text/javascript">
+	$(document).ready(function(e){
+	document.addEventListener("deviceready", function(){
+		
+		if(navigator.connection.type != Connection.NONE)
+		{
+			//alert("conectado");
+			slidePrincipal();
+			slideMiniatura();
+			slideVertical();
+			galeria_video('nacionales');	
+			minuto_minuto();
+			CargarNoticiasHomeGal();
+			
+		}
+		else
+		{
+			alert("No conectado");
+		}
+	
+	});	
+});
+	
+	
+
+         /*
+    	$(document).ready(function() {
 				//alert("conexion:"+navigator.connection.type);
 					slidePrincipal();
 					slideMiniatura();
 					slideVertical();
-/*					galeriaImagenes();
-*/					galeria_video('nacionales');	
+					//galeriaImagenes();
+					//galeria_video('nacionales');	
 					minuto_minuto();
-					CargarNoticiasHomeGal();
-				
-               
-				
-				
-				
-				
+					//CargarNoticiasHomeGal();
+					
             });
-			
-						function CargarNoticiasHomeGal()
+			*/
+    </script>
+    <script>
+	
+	function checkConnection() {
+        var networkState = navigator.network.connection.type;
+
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+
+		var conex=states[networkState];
+    }
+	  
+	  
+	  
+			function CargarNoticiasHomeGal()
 			{
 				$.ajax({
 						type: "POST",
@@ -215,11 +103,13 @@
 			} 
 
 			
+	
+	
 			function slidePrincipal()
 			{
 				 $.ajax({
-					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/slideprincipal_ip.php",
+				type: "POST",
+				url: "http://166.78.193.53/APPSintesis/php/slideprincipal.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -232,7 +122,6 @@
 			}
 			function slideMiniatura()
 			{
-				/*SLIDE MINIATURAS*/
 				$.ajax({
 					type: "POST",
 				url: "http://166.78.193.53/APPSintesis/php/slide_miniatura.php",
@@ -246,7 +135,7 @@
 			}
 			function slideVertical()
 			{
-				
+				//alert("vertical");
 				$.ajax({
 					type: "POST",
 				url: "http://166.78.193.53/APPSintesis/php/slide_vertical.php",
@@ -288,32 +177,17 @@
 				}
 				});
 			}
-
 			
-/*			function galeria_video()
-			{
-				$.ajax({
-					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php_min/galeria_video.php",
-				data: "",
-				cache: false,
-				success: function(message)
-				{	
-				$('.contvideogaleria').html(message);
-				}
-				});
-			}
-*/			
 			function minuto_minuto()
-			{
+			{//alert("min");
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/minutoaminuto.php",
+				url: "http://166.78.193.53/AppSintesis/php/minutoaminuto.php",
 				data: "",
 				cache: false,
 				success: function(message)
 				{	
-				$('.Minuto_A_Minuto').html(message);
+				$('#minuto_home').html(message);
 				}
 				});
 			}
@@ -337,16 +211,16 @@
 		var ref = window.open('https://www.facebook.com/SintesisPuebla?fref=ts', '_blank', 'location=yes');
 		}
 		
-		function CargarNoticiasHome()
-	{
-	//alert("mmbn");
 		
-		//$("#vertical_seccion").hide();
+	
+	function CargarNoticiasHome()
+	{
+	
 		slideVertical2();
 		slidePrincipal();
 		slideMiniatura();
 		galeriaImagenes();
-		galeria_video();	
+		//galeria_video();	
 		minuto_minuto();
 		function slideVertical2()
 			{//ContenedorDivMedio
@@ -375,7 +249,7 @@
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasPlazas_ip.php",
+				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasPlazas.php",
 				data: "plaza="+plaza,
 				cache: false,
 				success: function(message)
@@ -423,7 +297,7 @@
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/cargar_seccion_cel.php",
+				url: "http://166.78.193.53/APPSintesis/php/cargar_seccion.php",
 				data: "seccion="+seccion,
 				cache: false,
 				success: function(message)
@@ -470,124 +344,31 @@
 		 
 	}
 
-		
-	/*	function CargarNoticiasHome()
-	{
-		slidePrincipal();
-		slideMiniatura();
-		document.getElementById("vertical_seccion").innerHTML="";
-		slideVertical();
-		galeriaImagenes();
-		galeria_video();	
-		minuto_minuto();
-	} 
-	
-	function CargarNoticiasPlaza(plaza)
-	{
-			$.ajax(
-			{
 
-				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php_min/CargarNoticiasPlazas.php",
-				data: "plaza="+plaza,
-				cache: false,
-				success: function(message)
-				{
-					datos = JSON.parse(message);
-					for(i=0;i<datos.length;i++)
-					{
-						document.getElementById("name_SeccionSeccion").innerHTML="";
-						$(".SeccionSeccion").html(
-							datos[i].titulo_seccion
-						);
-						$(".ContenedorPrincipalSeccion").html(
-							datos[i].slide_principal
-						);
-						
-						$(".DivVertical").html(
-						datos[i].slide_vertical
-						);
-						
-						$("#minuto_plaza").html(
-						datos[i].ultimas_noticias
-						);
-					}
-					
-				
-				
-				}
-			});
-
-	} */
-
-	
-	/*function CargarNoticiasHome()
-	{
-		setTimeout(CargarNoticiasHome,60000);
-			$.ajax(
-			{
-
-				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasHome.php",
-				data: "",
-				cache: false,
-				success: function(message)
-				{	
-				$('#ContenedorSlides').html(message);
-				
-				}
-			});
-
-	} 
-	
-	function CargarNoticiasPlaza(plaza)
-	{
-			$.ajax(
-			{
-
-				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasPlazas.php",
-				data: "plaza="+plaza,
-				cache: false,
-				success: function(message)
-				{
-				$("#plaza").html(message);
-				
-				}
-			});
-
-	} 
-
-
-	
-//CargarNoticiasHome();*/
-
-/*$(window).load(function() {
-      $('#cargando').hide();
-});*/
 
 function LeerNota(id)
 	{
-		//$('.NotaTitulo').html("Nose titulo extra");
 			$.ajax(
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/Nota_ip.php",
+				url: "http://166.78.193.53/APPSintesis/php/Nota.php",
 				data: "id="+id,
 				cache: false,
 				success: function(message)
 				{
 					datos = JSON.parse(message);
-					//alert ("datos:"+datos);
 					for(i=0;i<datos.length;i++)
 					{
 						
 					
 					$('.ImagenesNotaImagen').html(
-					'<img src="http://166.78.193.53/images/imagenes-articulos/'+datos[i].imagen+'">'+
+					
+					//'<img src="http://166.78.193.53/images/imagenes-articulos/'+datos[i].imagen+'">'+
+					//'<a href="http://166.78.193.53/images/imagenes-articulos/'+datos[i].imagen+'" >'+
+					'<img src="http://166.78.193.53/images/'+datos[i].imagen+'">'+
 					'<div class="ZoomImagenNota">'+
-						'<a href="http://166.78.193.53/images/imagenes-articulos/'+datos[i].imagen+'" >'+
+						'<a href="http://166.78.193.53/images/'+datos[i].imagen+'" >'+
 						'</a>'+
 					'</div>'+
 					'<div class="MasImagenNota">'+
@@ -598,10 +379,8 @@ function LeerNota(id)
 					$('.NotaSeccion').html(
 					datos[i].seccion
 					);
-					//alert("pseudo:"+datos[i].seccion_pseudo+"nombre de la clase:back_"+datos[i].seccion_pseudo);
-					/*pseudo back_nacion NotaSeccion*/
-					//$('.NotaSeccion').attr('class', 'back_'+datos[i].seccion_pseudo+' NotaSeccion');
-					$("#name_section").removeAttr("class");//removemos el  que tiene 
+					
+					$("#name_section").removeAttr("class");
 					$("#name_section").addClass('back_'+datos[i].seccion_pseudo);
 					$("#name_section").addClass('NotaSeccion');
 					$("#name_section").css({'color':'#fff'});
@@ -613,9 +392,9 @@ function LeerNota(id)
 					$('.NotaSumario').html(
 					datos[i].sumario
 					);
-					/*$('.NotaAutor').html(
+					$('.NotaAutor').html(
 					datos[i].autor
-					);*/
+					);
 					
 					$('.NotaFechaCreacion').html(
 					datos[i].fecha
@@ -637,81 +416,36 @@ function LeerNota(id)
 	}
 
 
-
 </script>
 
+
+ <script>
+   //setInterval(" window.location.reload();",10000);
+  // "window.location='pagina.html
+   //setTimeout("window.location='index.html'" ,10000) 
+  </script>
+
 </head>
-<body >
-<!--<div class="lb-overlay" id="cargando" style="display:'none'"> <img src="imagenes/loading.gif"> </div>-->
+<body>
+<!--
+onload="initialize()"
+"<div class="lb-overlay" id="cargando" style="display:'none'"> <img src="imagenes/loading.gif"> </div>-->
 
 <!-- Home -->
-<div id="home" class="content"  >
-    <div class="HeaderAlternativo">
-      <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a> </div>
-      <div style=" display:inline-block; width:65%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
-      <div style=" display:inline-block; padding-top:0px; width:10%; text-align:right;"> <a href="#Info"> <img src="imagenes/iconos/azules/informacion@2x.png" width="50" > </a> </div>
-    </div>
+<div id="home" class="content" >
+<div class="HeaderAlternativo">
+  <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a> </div>
+  <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
+  <div style=" display:inline-block; padding-top:0px; width:10%; text-align:right;"> <a href="#Info"> <img src="imagenes/iconos/azules/informacion@2x.png" width="50" > </a> </div>
+</div>
 <div id="ContenedorSlides2"> 
 <div id="ContenedorSlides"> 
   <!--Slide Principal-->
-      <div  class="SlidePrincipal ContenedorSlidePrincipal" id="cont_slideprincipal" >
+        <div  class="ContenedorSlidePrincipal_php" id="cont_slideprincipal" >
       
-          <!--  <a href="#nota">
-            <div style="display:inline-block; overflow:hidden">
-              <div class="SlidePrincipalImagen"> <img src="imagenes/imagenes-articulos/1.jpg"> </div>
-              <div class="SlidePrincipalContenido">
-                <div class="SlidePrincipalTitulo"> Signan convenio para obras en pueblos indígenas </div>
-                <div class="SlidePrincipalSeccion"> METRÓPOLI </div>
-                <div class="SlidePrincipalAutor"> Clauda Aguilar/Síntesis </div>
-                <div class="SlidePrincipalFecha"> 2013-03-28 14:27:29 </div>
-                <div class="SlidePrincipalSumario"> Sumario </div>
-              </div>
-            </div>
-            </a> 
-            
-            <div style="display:inline-block; overflow:hidden">
-              <div class="PublicidadSlidePrincipal">
-              <img src="imagenes/publicidad/1.jpg">
-              </div>
-            </div>
-            
-            <a href="#nota">
-            <div style="display:inline-block; overflow:hidden">
-              <div class="SlidePrincipalImagen"> <img src="imagenes/imagenes-articulos/3.jpg"> </div>
-              <div class="SlidePrincipalContenido">
-                <div class="SlidePrincipalTitulo"> Signan convenio para obras en pueblos indígenas </div>
-                <div class="SlidePrincipalSeccion"> METRÓPOLI </div>
-                <div class="SlidePrincipalAutor"> Clauda Aguilar/Síntesis </div>
-                <div class="SlidePrincipalFecha"> 2013-03-28 14:27:29 </div>
-                <div class="SlidePrincipalSumario"> Sumario </div>
-              </div>
-            </div>
-            </a> 
-            
-            <a href="#nota">
-            <div style="display:inline-block; overflow:hidden">
-              <div class="SlidePrincipalImagen"> <img src="imagenes/imagenes-articulos/4.jpg"> </div>
-              <div class="SlidePrincipalContenido">
-                <div class="SlidePrincipalTitulo"> Signan convenio para obras en pueblos indígenas </div>
-                <div class="SlidePrincipalSeccion"> METRÓPOLI </div>
-                <div class="SlidePrincipalAutor"> Clauda Aguilar/Síntesis </div>
-                <div class="SlidePrincipalFecha"> 2013-03-28 14:27:29 </div>
-                <div class="SlidePrincipalSumario"> Sumario </div>
-              </div>
-            </div>
-            </a> 
-            
-            <div style="display:inline-block; overflow:hidden">
-              <div class="PublicidadSlidePrincipal">
-              <img src="imagenes/publicidad/9.jpg">
-              </div>
-            </div>
-        -->
         </div>
-        
   <!--Slide Principal--> 
   
-    
   <!--Slide Miniaturas-->
   <div  class="ContenedorSlideMiniaturas">
     <div  class="SubContenedorSlideMiniaturas" id="cont_slidemini">
@@ -724,14 +458,7 @@ function LeerNota(id)
   <!--Slide Vertical-->
   <div class="DivVertical">
     <div  class="ContenedorSlideVertical" id="content_slideVertical" >
-     <!--
-        se carga de php
-        <div > 
-            <div class="PublicidadSlideVertical">
-                <img src="imagenes/publicidad/3.jpg">
-            </div>
-        </div>-->
-        
+
     </div>
   </div>
   <!--Slide Vertical--> 
@@ -739,10 +466,10 @@ function LeerNota(id)
   <!--Contenedor Minuti a Minuto Video y Suplementos-->
   <div class="ContenedorDivMedio">
     <div class="ContenedorMinutovideo">
-      <div class="Minuto_A_Minuto">
+      <div class="Minuto_A_Minuto" id="minuto_home">
        <!-- minuto a minuto -->
       </div>
-      <a href="#video"><div class="Video"> <img src="imagenes/video.png"> </div></a>
+      <a href="#video"><div class="Video"> <img src="imagenes/video3.jpg"> </div></a>
     </div>
     <div class="Suplementos"> 
         <div class="DivSuplementos">
@@ -778,30 +505,30 @@ function LeerNota(id)
             
    		<div id="Gallery"  class="SlidePrincipal ImagenesNota" >
    		
-            <div style="display:inline-block; overflow:hidden">
-              <div class="ImagenesNotaImagen">
-                <!--<img src="imagenes/imagenes-articulos/1.jpg">
-                <div class="ZoomImagenNota">
-                    <a href="imagenes/imagenes-articulos/1.jpg" id="">
-                    <img src="imagenes/iconos/azules/ampliar@2x.png">
-                    </a>
-                </div>
-                <div class="MasImagenNota">
-                    <img src="imagenes/iconos/azules/otras@2x.png">
-                </div>-->
-             </div>
+        <div style="display:inline-block; overflow:hidden">
+          <div class="ImagenesNotaImagen">
+          	<!--<img src="imagenes/imagenes-articulos/1.jpg">
+          	<div class="ZoomImagenNota">
+                <a href="imagenes/imagenes-articulos/1.jpg" id="">
+                <img src="imagenes/iconos/azules/ampliar@2x.png">
+                </a>
             </div>
-            <!--<div style="display:inline-block; overflow:hidden">
-              <div class="ImagenesNotaImagen">
-                  <img src="imagenes/imagenes-articulos/2.jpg">
-                  <div class="ZoomImagenNota">
-                      <a href="imagenes/imagenes-articulos/2.jpg">
-                        <img src="imagenes/iconos/azules/ampliar@2x.png">
-                      </a>
-                  </div>
-              
+            <div class="MasImagenNota">
+              	<img src="imagenes/iconos/azules/otras@2x.png">
+          	</div>-->
+         </div>
+        </div>
+       <!-- <div style="display:inline-block; overflow:hidden">
+          <div class="ImagenesNotaImagen">
+              <img src="imagenes/imagenes-articulos/2.jpg">
+              <div class="ZoomImagenNota">
+                  <a href="imagenes/imagenes-articulos/2.jpg">
+                    <img src="imagenes/iconos/azules/ampliar@2x.png">
+                  </a>
               </div>
-            </div>-->
+          
+          </div>
+        </div>-->
       
       
    		 </div>
@@ -810,8 +537,8 @@ function LeerNota(id)
         <div class="NotaTitulo"></div>
         <div class="NotaSumario"></div>
         
-<!--         <div class="NotaAutor"></div>
--->         <div class="NotaFechaCreacion"></div>
+         <div class="NotaAutor"></div>
+         <div class="NotaFechaCreacion"></div>
         
         <div class="NotaCompleta"> </div>
         
@@ -824,11 +551,9 @@ function LeerNota(id)
 </div>
 <!--Nota--> 
 
-<!--Secciones Plazas-->
+<!--Secciones-->
 <div id="secciones" class="TransicionFadeOut">
   <div class="HeaderAlternativo">
-  
-  
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a>
     
      </div>
@@ -837,172 +562,33 @@ function LeerNota(id)
   <div> 
   
   <div class="back_nacion SeccionSeccion" id="name_SeccionSeccion" style="color:#FFF;">
-  	PUEBLA
+
   </div>
     <!--Slide Principal Plaza-->
     <div class="ContenedorPrincipalSeccion">
-    
-      <div style="float:left;margin-right:-30000px;">
-        
-        <!--<div class="SubContenedorPrincipalSeccion"> 
-            <a href="#nota">
-              <div class="ContenidoPrincipalSeccion">
-                <div class="ImagenPrincipalSeccion"> <img src="imagenes/imagenes-articulos/10.jpg" > </div>
-                <div class="TextoPrincipalSeccion">
-                  <div class="TituloPrincipalSeccion"> Signan convenio para obras en pueblos indígenas </div>
-                  <div class="SeccionPrincipalSeccion"> METRÓPOLI </div>
-                 <div class="FechaPrincipalSeccion"> 2013-03-28 14:27:29 </div>
-                </div>
-              </div>
-              </a> 
-              
-              <a href="#nota">
-              <div class="ContenidoPrincipalSeccion">
-                <div class="ImagenPrincipalSeccion"> <img src="imagenes/imagenes-articulos/2.jpg" > </div>
-                <div class="TextoPrincipalSeccion">
-                  <div class="TituloPrincipalSeccion"> Signan convenio para obras en pueblos indígenas </div>
-                  <div class="SeccionPrincipalSeccion"> METRÓPOLI </div>
-                  <div class="FechaPrincipalSeccion"> 2013-03-28 14:27:29 </div>
-                </div>
-              </div>
-              </a> 
-              
-              <div class="ContenidoPrincipalSeccion">
-                <div class="PublicidadPrincipalSeccion"> <img src="imagenes/publicidad/5.jpg" > </div>
-              </div>
-              
-              <a href="#nota">
-              <div class="ContenidoPrincipalSeccion">
-                <div class="ImagenPrincipalSeccion"> <img src="imagenes/imagenes-articulos/3.jpg" > </div>
-                <div class="TextoPrincipalSeccion">
-                  <div class="TituloPrincipalSeccion"> Signan convenio para obras en pueblos indígenas </div>
-                  <div class="SeccionPrincipalSeccion"> METRÓPOLI </div>
-                  <div class="FechaPrincipalSeccion"> 2013-03-28 14:27:29 </div>
-                </div>
-              </div>
-              </a> 
-              
-              <a href="#nota">
-              <div class="ContenidoPrincipalSeccion">
-                <div class="ImagenPrincipalSeccion"> <img src="imagenes/imagenes-articulos/4.jpg" > </div>
-                <div class="TextoPrincipalSeccion">
-                  <div class="TituloPrincipalSeccion"> Signan convenio para obras en pueblos indígenas </div>
-                  <div class="SeccionPrincipalSeccion"> METRÓPOLI </div>
-                  <div class="FechaPrincipalSeccion"> 2013-03-28 14:27:29 </div>
-                </div>
-              </div>
-              </a> 
-              
-              <div class="ContenidoPrincipalSeccion">
-                <div class="PublicidadPrincipalSeccion"> <img src="imagenes/publicidad/8.jpg" > </div>
-              </div>
-              
-              <a href="#nota">
-              <div class="ContenidoPrincipalSeccion">
-                <div class="ImagenPrincipalSeccion"> <img src="imagenes/imagenes-articulos/4.jpg" > </div>
-                <div class="TextoPrincipalSeccion">
-                  <div class="TituloPrincipalSeccion"> Signan convenio para obras en pueblos indígenas </div>
-                  <div class="SeccionPrincipalSeccion"> METRÓPOLI </div>
-                  <div class="FechaPrincipalSeccion"> 2013-03-28 14:27:29 </div>
-                </div>
-              </div>
-              </a> 
-              
-          </div>-->
+  
           
-        
+          
       </div>
     </div>
     <!--Slide Principal Plaza--> 
     
     <!--Slide Vertical Seccion-->
     <div class="DivVertical" id="vertical_seccion">
-      <!--<div  class="ContenedorSlideVertical" >
-        <div > <a href="#nota" onclick="LeerNota('.$id_nota_app.')">
-          <div class="SlideVerticalArticulo">
-           
-            <div class="SlideVerticalImagen"><img src="imagenes/imagenes-articulos/6.jpg" > </div>
-            <div class="SlideVerticalContenido">
-              <div class="SlideVerticalTitulo">Recibirá Puebla el Grand Slam...</div>
-              <div class="SlideVerticalAutor">Alma Liliana Velazquez /Síntesis</div>
-              <div class="SlideVerticalFecha">2013-03-28 17:40:48</div>
-            </div>
-          </div>
-          </a> </div>
-        <div > <a href="#nota" onclick="LeerNota('.$id_nota_app.')">
-          <div class="SlideVerticalArticulo">
-           
-            <div class="SlideVerticalImagen"><img src="imagenes/imagenes-articulos/3.jpg" > </div>
-            <div class="SlideVerticalContenido">
-              <div class="SlideVerticalTitulo">Recibirá Puebla el Grand Slam...</div>
-              <div class="SlideVerticalAutor">Alma Liliana Velazquez /Síntesis</div>
-              <div class="SlideVerticalFecha">2013-03-28 17:40:48</div>
-            </div>
-          </div>
-          </a> </div>
-          
-          <div > 
-            <div class="PublicidadSlideVertical">
-                <img src="imagenes/publicidad/2.jpg">
-            </div>
-        </div>
-        
-        <div > <a href="#nota" onclick="LeerNota('.$id_nota_app.')">
-          <div class="SlideVerticalArticulo">
-           
-            <div class="SlideVerticalImagen"><img src="imagenes/imagenes-articulos/2.jpg" > </div>
-            <div class="SlideVerticalContenido">
-              <div class="SlideVerticalTitulo">Recibirá Puebla el Grand Slam...</div>
-              <div class="SlideVerticalAutor">Alma Liliana Velazquez /Síntesis</div>
-              <div class="SlideVerticalFecha">2013-03-28 17:40:48</div>
-            </div>
-          </div>
-          </a> </div>
-        <div > <a href="#nota" onclick="LeerNota('.$id_nota_app.')">
-          <div class="SlideVerticalArticulo">
-            
-            <div class="SlideVerticalImagen"><img src="imagenes/imagenes-articulos/7.jpg" > </div>
-            <div class="SlideVerticalContenido">
-              <div class="SlideVerticalTitulo">Recibirá Puebla el Grand Slam...</div>
-              <div class="SlideVerticalAutor">Alma Liliana Velazquez /Síntesis</div>
-              <div class="SlideVerticalFecha">2013-03-28 17:40:48</div>
-            </div>
-          </div>
-          </a> </div>
-      </div>-->
+    
     </div>
     <!--Slide Vertical Seccion--> 
     
     <!--Contenedor Minuto a Minuto Video y Suplementos-->
-<!--    <div class="ContenedorDivMedio">
+    <div class="ContenedorDivMedio">
       <div class="ContenedorMinutovideo">
-        <div class="Minuto_A_Minuto">
-          <div style="width:90%;">
-            <div style="display:inline-block; color: rgb(0,85,143);"> 10:49 PM </div>
-            <div style="display:inline-block; color: rgb(151,151,151);"> / Mantendrá Seproci vigilancia vigilancia... </div>
-            <hr>
-          </div>
-          <div style="width:90%;">
-            <div style="display:inline-block; color: rgb(0,85,143);"> 10:49 PM </div>
-            <div style="display:inline-block; color: rgb(151,151,151);"> / Mantendrá Seproci vigilancia vigilancia... </div>
-            <hr>
-          </div>
-          <div style="width:90%;">
-            <div style="display:inline-block; color: rgb(0,85,143);"> 10:49 PM </div>
-            <div style="display:inline-block; color: rgb(151,151,151);"> / Mantendrá Seproci vigilancia vigilancia... </div>
-            <hr>
-          </div>
-          <div style="width:90%;">
-            <div style="display:inline-block; color: rgb(0,85,143);"> 10:49 PM </div>
-            <div style="display:inline-block; color: rgb(151,151,151);"> / Mantendrá Seproci vigilancia vigilancia... </div>
-            <hr>
-          </div>
-          <div style="width:90%;">
-            <div style="display:inline-block; color: rgb(0,85,143);"> 10:49 PM </div>
-            <div style="display:inline-block; color: rgb(151,151,151);"> / Mantendrá Seproci vigilancia vigilancia... </div>
-          </div>
+        <div class="Minuto_A_Minuto" id="minuto_plaza">
+       
         </div>
-        <div class="Video"> <img src="imagenes/video.png"> </div>
+        <div class="Video_seccion"> 
+        
+        </div>
+        
       </div>
       <div class="Suplementos"> 
         <div class="DivSuplementos">
@@ -1014,9 +600,10 @@ function LeerNota(id)
         </div>
     </div>
     </div>
--->    <!--Contenedor Minuti a Minuto Video y Suplementos--> 
+    <!--Contenedor Minuti a Minuto Video y Suplementos--> 
     
   </div>
+  
 </div>
 <!--Secciones--> 
 
@@ -1042,20 +629,43 @@ function LeerNota(id)
 <!--Galeria de Fotos-->
 
 <!--Ubicacion-->
+
 <div id="ubicacion" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
-    <div class="logo1"> <img src="imagenes/logo.png" height="25"> </div>
+    <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
     
   </div>
-  <div style="height:100%; width:100%; padding-top:0px; padding-bottom:0px;">
-    <div class="contNav" style="width:100%; height:100%; background:url(imagenes/mapa.jpg) no-repeat; background-size:100%; background-position:center center; margin-top:-20px;">
+  <div style="height:100%; overflow:hidden;">
+    <div class="contUbicacion">
+    <!--<div id="map_canvas" style="width:100%; height:100%"></div>-->
+    <div id="map_canvas" class="map rounded"></div>
+     
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+		<script type="text/javascript" src="mapa/demo.js"></script>
+		<script type="text/javascript" src="mapa/jquery.ui.map.js"></script>
+		<script type="text/javascript">
+            $(function() { 
+				demo.add(function() {
+					$('#map_canvas').gmap({'center': '19.04327,-98.22035', 'zoom': 18, 'disableDefaultUI':true, 'callback': function() {
+						var self = this;
+						self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+							self.openInfoWindow({ '': '' }, this);
+						});	
+					}});
+				}).load();
+			});
+        </script>
+    
+     
     </div>
  
   </div>
-</div><!-- Ubicacion-->
+</div>
+<!-- Ubicacion phone-->
 
 <!--Video-->
+
 <div id="video" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
@@ -1064,15 +674,14 @@ function LeerNota(id)
   </div>
   <div style="height:93.5%; overflow:hidden;">
     <div class="contvideogaleria">
-    
-     <!-- se carga cotenido de php -->
+    		<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+
+    <iframe src="http://player.vimeo.com/video/41135183" width="497" height="298" seamless></iframe>
+	 
+</div>
+
     </div>
-    <script type="text/javascript">
-function cambiarvideo(url,titulo){
-  document.getElementById('videogaleria').innerHTML = '<div class="VideoTituloPrincipal"><strong>'+titulo+'</strong></div><object width="100%" height="49%"><param name="movie" value="'+url+'?fs=1&amp;hl=es_ES&amp;rel=0&amp;autoplay=1&modestbranding=1"/><param value="true" name="allowFullScreen"/><param value="always" name="allowscriptaccess"/><param value="transparent" name="wmode"/><embed width="100%" height="49%" wmode="transparent"  allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="'+url+'?fs=1&amp;hl=es_ES&amp;rel=0&amp;autoplay=1&showinfo=0&modestbranding=1"/></object>';
-return false;
-}
-</script> 
+
   </div>
 </div>
 
@@ -1080,8 +689,8 @@ return false;
 <!--Video-->
 
 
-
 <!--gia Nav-->
+
 <div id="guia" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
@@ -1089,7 +698,7 @@ return false;
     
   </div>
   <div style="height:100%; width:100%;">
-    <div class="contNav" style="width:100%; height:100%; background:url(imagenes/guia.png) no-repeat; background-size:320px; background-position:center center; margin-top:-20px;">
+    <div class="contNav" style="width:100%; height:100%; background:url(imagenes/guia.png) no-repeat; background-size:770px; background-position:center center; margin-top:-20px;">
     </div>
  
   </div>
@@ -1097,7 +706,7 @@ return false;
 <!-- guia nav--> 
 
 <!--IMPRESO -->
-<!--Impreso-->
+<!--
 <script>
 
 function ImprimirImpresoPortada()
@@ -1152,7 +761,7 @@ function ImprimirImpresoPortada()
      <div style=" display:inline-block; padding-top:0px; width:50px;padding-left:10px; "> <a href="javascript:;" onClick="$('#panelSeccionesImpreso').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a>
      </div>
      
-    <div class="logo1"> <img src="imagenes/logo.png" height="25"> </div>
+    <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
     
   </div>
 
@@ -1236,68 +845,72 @@ function ImprimirImpresoPortada()
         </div>
 	</div>
 </div>
+-->
 <!--Impreso--> 
 
 
 <!--Panel de Secciones de Impreso-->
-
+<!--
 <div id="panelSeccionesImpreso"  class="panelSeccion" style=" min-width:20%;"> 
   <div class="paneSeccionEdicion"> Edicion Impresa </div>
   
   <a href="#impreso-portadas" onClick="ImprimirImpresoTodas('Nacional');$('#panelSeccionesImpreso').css('left','-250%');">
-  <div class="panelSeccionTitulo2"> Nacional </div>
+  <div class="panelSeccionTitulo"> Nacional </div>
   </a>
    <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Puebla');">
-  <div class="panelSeccionTitulo2"> Puebla </div>
+  <div class="panelSeccionTitulo"> Puebla </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Hidalgo');">
-  <div class="panelSeccionTitulo2"> Hidalgo </div>
+  <div class="panelSeccionTitulo"> Hidalgo </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Tlaxcala');">
-  <div class="panelSeccionTitulo2"> Tlaxcala </div>
+  <div class="panelSeccionTitulo"> Tlaxcala </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Oaxaca');">
-  <div class="panelSeccionTitulo2"> Oaxaca </div>
+  <div class="panelSeccionTitulo"> Oaxaca </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Chiapas');">
-  <div class="panelSeccionTitulo2"> Chiapas </div>
+  <div class="panelSeccionTitulo"> Chiapas </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Yucatan');">
-  <div class="panelSeccionTitulo2"> Yucatán </div>
+  <div class="panelSeccionTitulo"> Yucatán </div>
   </a>
+  <div class="panelSeccionSpacer"> </div>
   <div class="paneSeccionEdicion"> Suplementos</div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('arte_cultura');">
-  <div class="panelSeccionTitulo2" > Catedral, Arte y Cultura </div>
+  <div class="panelSeccionTitulo" style=" width:80%; text-align:center;"> Catedral, Arte y Cultura </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('velocidad');">
-  <div class="panelSeccionTitulo2"> Velocidad </div>
+  <div class="panelSeccionTitulo"> Velocidad </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('recorridos');">
-  <div class="panelSeccionTitulo2"> Recorridos </div>
+  <div class="panelSeccionTitulo"> Recorridos </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('NYT');">
-  <div class="panelSeccionTitulo2" > New York Times </div>
+  <div class="panelSeccionTitulo" style=" width:80%; text-align:center;"> New York Times </div>
   </a>
   <div class="panelSeccionSpacer"> </div>
   <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('LaTarea');">
-  <div class="panelSeccionTitulo2"> La Tarea </div>
+  <div class="panelSeccionTitulo"> La Tarea </div>
   </a>
+  <div class="panelSeccionSpacer"> </div>
   <a class="closeSeccion" href="javascript:;" onClick="$('#panelSeccionesImpreso').css('left','-250%');"></a> </div>
-
+-->
 <!--Panel de Secciones de Impreso-->
 
 
 
 <!--Impreso Portadas-->
+<!--
 <script>
 	function CambiarPortada(plaza,archivo){
 		$('#ImagenPortadaImp').html('<img src="http://166.78.193.53/APPSintesis/ImpresoPortadas/'+plaza+'/'+archivo+'.jpg" width="100%">');
@@ -1335,7 +948,7 @@ function ImprimirImpresoTodas(plaza)
      </div>
      
      
-        <div class="logo1"> <img src="imagenes/logo.png" height="25"> </div>
+        <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
         
       </div>
 
@@ -1345,27 +958,12 @@ function ImprimirImpresoTodas(plaza)
     </div>
     
 </div>
+
+
+-->
 <!--Impreso Portadas--> 
 
 
-
-<!-- FIN IMPRESO-->
-<!--Dialogo Plazas--> 
-<a href="#home" class="overlay" id="DialogoPlazas"></a>
-<div class="popup"> <a href="#plaza" onClick="CargarNoticiasPlaza('puebla')">
-  <div class="DialogoPlaza"> Puebla </div>
-  </a> <a href="#plaza" onClick="CargarNoticiasPlaza('yucatan')">
-  <div class="DialogoPlaza"> Yucatán </div>
-  </a> <a href="#plaza" onClick="CargarNoticiasPlaza('tlaxcala')">
-  <div class="DialogoPlaza"> Tlaxcala </div>
-  </a> <a href="#plaza" onClick="CargarNoticiasPlaza('hidalgo')">
-  <div class="DialogoPlaza"> Hidalgo </div>
-  </a> <a href="#plaza" onClick="CargarNoticiasPlaza('oaxaca')">
-  <div class="DialogoPlaza"> Oaxaca </div>
-  </a> <a href="#plaza" onClick="CargarNoticiasPlaza('chiapas')">
-  <div class="DialogoPlaza"> Chiapas </div>
-  </a> <a class="close" href="#home"></a> </div>
-<!--Dialogo Plazas--> 
 
 <!--Dialogo de Info--> 
 
@@ -1380,8 +978,8 @@ function ImprimirImpresoTodas(plaza)
     Director de la Redacción.<br>
     <strong>Erick Becerra.</strong>
     <p>&nbsp;</p>
-    Para cualquier problema sobre la aplicación contactanos <a class="" href="mailto:admin-web@sintesisdigital.com.mx" style="width:150px; margin:auto; margin-top:10px;">
-    <div class="BotonDialogoInfo"> Contacto </div>
+    Para cualquier problema sobre la aplicación contactanos <a class="" href="mailto:admin-web@sintesisdigital.com.mx" style="width:150px; margin:auto; margin-top:100px;">
+    <div class="BotonDialogoInfo"> Contactanos </div>
     </a>
     <p>&nbsp;</p>
     Ésta publicación ha sido realizada por Desarrollo Síntesis.<br>
@@ -1394,7 +992,7 @@ function ImprimirImpresoTodas(plaza)
 <!--Panel de Secciones-->
 
 <div id="panelSecciones"  class="panelSeccion"> 
-  <a href="#home" onClick="$('#panelSecciones').css('left','-250%'), CargarNoticiasHome();">
+  <a href="#home" onClick="$('#panelSecciones').css('left','-250%'),CargarNoticiasHome();">
   <div class="panelSeccionTitulo" style="background-image:url(imagenes/iconos/azules/home@2x.png);"> Home </div>
   
   <div class="paneSeccionEdicion"> Secciones </div>
@@ -1456,46 +1054,30 @@ function ImprimirImpresoTodas(plaza)
 <!--Panel de Secciones--> 
 
 
-<!--Panel de iconos-->
-
-<div id="panelIconos"  class="panelIcono"> 
-  <a href="#ubicacion" onClick="$('#panelIconos').css('left','-250%');">
-  <div class="panelIconoUbicacion" style="background-image:url(imagenes/iconos/azules/ubicacion@2x.png);">  </div>
-  
-  </a>
- <a href="mailto:admin-web@sintesisdigital.com.mx" onClick="$('#panelSecciones').css('center','-250%');">
-  <div class="panelIconoUbicacion" style="background-image:url(imagenes/iconos/azules/correo@2x.png);">  </div>
-  </a>
-  <a href="javascript:;" onClick="PagFace();"> 
-  <div class="panelIconoUbicacion" style="background-image:url(imagenes/iconos/azules/facebook@2x.png);">  </div>
-  </a>
- <a href="javascript:;" onClick="PagTwitter();">
-  <div class="panelIconoUbicacion" style="background-image:url(imagenes/iconos/azules/twitter@2x.png);">  </div>
-  </a>
-  <a href="#guia" onClick="$('#panelIconos').css('center','-250%');">
-  <div class="panelIconoUbicacion" style="background-image:url(imagenes/iconos/azules/guia@2x.png);">  </div>
-  </a>
-  <a class="closeIcono" href="javascript:;" onClick="$('#panelIconos').css('left','-250%');"></a> 
-</div>
-<!--Panel de iconos--> 
-
 <!--Footer-->
- <div class="HeaderAlternativoFooter" style="position:fixed; bottom:0; vertical-align:top;   ">  
+<div class="HeaderAlternativo" style="position:fixed; bottom:0; vertical-align:top">
   
-  <div style="  text-align:center; vertical-align:bottom;position:absolute;  z-index:-1; width:100%; "> <a href="javascript:;" onClick="$('#panelIconos').css('left','0');"> <img src="imagenes/mas@2x.png" width="18" > </a> </div>
-
+<div style=" display:inline-block; text-align:center; position:absolute; z-index:-1; width:100%;"> <a href="#impreso" onClick="ImprimirImpresoPortada();"> <img src="imagenes/iconos/azules/impreso@2x.png" width="50" > </a> </div>
   
-  <div style="display:inline-block; padding-left:10px; padding-bottom:0px;vertical-align:center; margin-top:8px; z-index:-1;  "> <a href="#video" onClick="galeria_video('nacionales')">  <img src="imagenes/iconos/azules/video@2x.png" width="50"  > </a> </div>
+  <div style="display:inline-block; padding-left:20px; "> <a href="#ubicacion"> <img src="imagenes/iconos/azules/ubicacion@2x.png" width="50" > </a> </div>
   
-  <div style=" display:inline-block;padding-left:10px; padding-bottom:0px;vertical-align:center;margin-top:8px;" > <a href="#galeria"> <img src="imagenes/iconos/azules/galeria@2x.png" width="50"  > </a> </div>
+   <div style="display:inline-block; padding-left:20px; "> <a href="#video" onClick="galeria_video('nacionales')"> <img src="imagenes/iconos/azules/video@2x.png" width="50" > </a> </div>
   
-    <div style="float:right;display:inline-block;padding-right:10px;padding-bottom:0px;vertical-align:center;margin-top:8px; "> <a href="javascript:;" onClick="pagDesarrollo();"><img src="imagenes/iconos/azules/web@2x.png"  width="50" > </a> </div>
-
-     <div style=" float:right; display:inline-block; padding-right:10px;padding-bottom:0px;vertical-align:center; margin-top:8px;"> <a href="#impreso" onClick="ImprimirImpresoPortada();"> <img src="imagenes/iconos/azules/impreso@2x.png" width="50"  > </a> </div>
+  <div style=" display:inline-block;padding-left:20px;"> <a href="#galeria"> <img src="imagenes/iconos/azules/galeria@2x.png" width="50" > </a> </div>
+  
+  <div style=" display:inline-block;padding-left:20px;"> <a href="javascript:;" onClick="pagDesarrollo();"><img src="imagenes/iconos/azules/web@2x.png" width="50" > </a> </div>
+  
+   <div style=" float:right; display:inline-block; padding-right:20px;"> <a href="#guia"> <img src="imagenes/iconos/azules/guia@2x.png" width="50" > </a> </div>
+   
+  <div style="float:right;display:inline-block;padding-right:20px; "> <a href="mailto:admin-web@sintesisdigital.com.mx"> <img src="imagenes/iconos/azules/correo@2x.png" width="50" > </a> </div>
+  
+  <div style=" float:right; display:inline-block; padding-right:20px;"> <a href="javascript:;" onClick="PagTwitter();"> <img src="imagenes/iconos/azules/twitter@2x.png" width="50" > </a> </div>
+  
+  <div style=" float:right; display:inline-block; padding-right:20px;"> <a href="javascript:;" onClick="PagFace();"> <img src="imagenes/iconos/azules/facebook@2x.png" width="50" > </a> </div>
+  
   
 </div>
 <!--Footer-->
-
 
 <script>
       jQuery(document).ready(function($) {
@@ -1518,22 +1100,6 @@ function ImprimirImpresoTodas(plaza)
   
   
   });
-  
-    /* 3D Flow demos */
-$(function(){
-
-
-td1 = jQuery('.td1').swiper({
-slidesPerSlide:3,
-loop:true,
-//Enable 3D Flow
-tdFlow: {}
-})
-
-})
-
-  
-  
 
     </script> 
 </div>
