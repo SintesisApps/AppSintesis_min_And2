@@ -37,13 +37,14 @@ body{
 	height:30px;
 	margin:auto;
 	text-align:center;
-	padding-top:10px;
+	padding-top:54px;
 	background-color:#0c6090;
 	color:#FFF;
 	border-radius:15px;
 	-moz-border-radius:15px 15px 15px 15px; 
 	-webkit-border-radius:15px 15px 15px 15px; 
 	border:1px solid #707070;
+	margin-top:54px;
 }
 
 .HeadDialogoInfo{
@@ -409,7 +410,8 @@ body{
 @media screen and (min-width: 0px) and (max-width: 500px) {
 	
 	#home{
-		height:480px;
+/*		height:480px;
+*/							height:auto;
 	}
 	/*Slide miniaturas*/
 
@@ -460,10 +462,12 @@ body{
 	
 	/*Slide Principal*/
 .ContenedorSlidePrincipal {
-	 width: 320px;
-	 margin:auto;
+/*	 width: 320px;
+*/	 margin:auto;
+width:100%;
     overflow: auto;
-	-webkit-overflow-scrolling: touch;
+/*-webkit-transform: translate3d(0, 0, 0);
+*/				-webkit-overflow-scrolling: touch;
 	margin:auto;
 	background: rgba(204,204,204,.4);
 	height: 196px;
@@ -472,6 +476,12 @@ body{
 .ContenedorContenidoPrincipal {
 	margin-left: 0;
 	margin-right: 0;
+
+
+}
+.ContenedorSlidePrincipal_php {
+	 width: 100%;
+	 margin:auto;
 }
 
 .SlidePrincipalImagen {
@@ -488,9 +498,9 @@ body{
 .PublicidadSlidePrincipal {
 	display:inline-block;
 	width:320px;
-	height:auto;
-/*	height:242px;
-*/	vertical-align:top;
+/*	height:auto;
+*/	height:242px;
+	vertical-align:top;
 	overflow:hidden;
 }
 .SlidePrincipalImagen img {
@@ -519,7 +529,7 @@ body{
 	font-family:  Helvetica, sans-serif;
 /*	font-size: 30px;
 */	color: #4D4D4D;
-	font-size:15px;
+	font-size:14px;
 	text-shadow: 0.1em 0.1em #B8B8B8;
 }
 .SlidePrincipalSeccion {
@@ -556,6 +566,8 @@ body{
 .DivVertical{
 	width:296px;
 	height:auto;
+	overflow:auto;
+	display:inline-block;
 	}
 .ContenedorSlideVertical {
 	width: 296px;
@@ -566,13 +578,22 @@ body{
 	margin-right:12px;
 	text-align: center;
 	overflow: auto;
-/*	-webkit-overflow-scrolling: touch;
-*/	margin-bottom:50px;
-	height:220px;
-	
+	-webkit-overflow-scrolling: touch;
+	margin-bottom:50px;
+/*height:200px;
+*/height:auto;
+
+
+
+
+/*		height:220px;
+*/	
 	
 }
 
+#vertical_seccion{
+	height:100px;
+}
 .SlideVerticalSeccion {
 	position:absolute;
 	margin:0;
@@ -581,7 +602,7 @@ body{
 .SlideVerticalArticulo {
 	height:106px;
 	background: rgba(204,204,204,.9);
-	margin-top:10px;
+	margin-top:7px;
 
 
 }
@@ -589,18 +610,20 @@ body{
 .PublicidadSlideVertical {
 	background: rgba(204,204,204,.9);
 	width:100%;
-	margin-top:10px;
+	margin-top:7px;
 	height:135.7px;
+	overflow:auto;
 	
 }
 .PublicidadSlideVertical img{
 	background: rgba(204,204,204,.9);
-   width:260px;
-   height:112px;
+	width:296px;
+/*   width:260px;
+*/   height:112px;
 /*	height:125.7px;
-*/	margin-left:12px;
+*/	/*margin-left:12px;
 	margin-bottom:10px;
-	margin-top:10px;	
+	margin-top:10px;	*/
 }
 
 .SlideVerticalImagen {
@@ -639,6 +662,7 @@ body{
 	width:98%;
 	text-shadow: 0.3em 0.2em #B2B2B2 ;
 	font-weight: bold;
+	color:#4D4D4D;
 
 }
 
@@ -664,15 +688,25 @@ body{
 	width:100%;
 	text-align:center;
 	z-index:3;
+	height:auto;
+	overflow:auto;
 	}
 .ContenedorPrincipalSeccion{
 	vertical-align:top;
+		height:auto;
+
+/*	height:212px;
 	height:212px;
-	width: 100%;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
+*/	width: 296px;
+	margin-left:10px;
+	overflow-y: auto;
+	/*overflow: auto;*/
+				-webkit-overflow-scrolling: touch;
+	padding-top:20px;
+	height:auto;
+/*	padding-bottom:7px;
 	 padding:15px;
-	 
+*/	 
 	 }
 .SubContenedorPrincipalSeccion{
 	vertical-align:top;  
@@ -683,14 +717,15 @@ body{
 .ContenidoPrincipalSeccion{
 	display:inline-block; 
 	overflow:hidden;
-	background: rgba(204,204,204,.4); 
-	height:212px; 
-	padding:0px;
+	background: rgba(204,204,204,.4);
+	height:auto;
+/*	height:214px; 
+*/	padding:0px;
 	width:143px; 
 	margin:auto;
 	margin-left:5px;
-/*	box-shadow: 5px 5px 5px  #666;
-*/	vertical-align:top;
+	box-shadow: 5px 5px 5px  #666;
+	vertical-align:top;
 	}
 .ImagenPrincipalSeccion{
 	display:inline-block;
@@ -724,7 +759,7 @@ body{
 	}
 .TituloPrincipalSeccion{
 	font-family:  Helvetica, sans-serif;
-	font-size: 16px; 
+	font-size: 13px; 
 	font-weight:bold;
 	color: #666;
 	text-shadow: 0.1em 0.1em #B8B8B8;
@@ -733,7 +768,7 @@ body{
 	}
 .SeccionPrincipalSeccion{
 	font-family:Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	color: #0c6090;
 	text-shadow:none;
 	padding-top:10px;
@@ -741,14 +776,14 @@ body{
 	}
 .AutorPrincipalSeccion{
 	font-family:Helvetica, sans-serif;
-	font-size:12px;
+	font-size:11px;
 	color:#0c6090;
 	text-shadow:none;
 	margin-left:8px;
 	}
 .FechaPrincipalSeccion{
 	font-family:Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	color: #0c6090;
 	text-shadow:none;
 	margin-left:8px;
@@ -761,22 +796,27 @@ body{
 	width:100%;
 	text-align:center;
 	z-index:3;
+	overflow:auto;
+	height:auto;
+	-webkit-overflow-scrolling: touch;
 	}
 .NotaContenedor {
 	background: rgba(204,204,204,.4);
 	text-shadow:none;
-	width:98%;
+	width:100%;
 	margin:auto;
 	margin-left:0px;
-}
+	overflow:auto;
+	height:auto;
+	-webkit-overflow-scrolling: touch;}
 
 
 .NotaContenedor img {
-	max-width:600px;
+	width:298px;
 	margin:auto;
 	float:left;
 	width:50%;
-	padding:10px;
+	padding:12px;
 	
 }
 .NotaTitulo{
@@ -786,6 +826,7 @@ body{
 	font-weight:bold;
 	padding-top:10px;
 	margin-left:10px;
+	margin-right:10px;
 }
 
 .NotaSumario{
@@ -793,8 +834,9 @@ body{
 	font-family:  Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	color:#666;
+	color:#666666;
 	margin-left:10px;
+	margin-right:10px;
 }
 .NotaAutor{
 	text-align:left;
@@ -803,6 +845,8 @@ body{
 	padding-top:30px;
 	font-weight: bold;
 	margin-left:10px;
+		margin-top:10px;
+
 }
 .NotaFechaCreacion{
 	text-align:left;
@@ -810,14 +854,20 @@ body{
 	color: #0c6090;
 	font-weight: bold;
 	margin-left:10px;
+		margin-top:10px;
+
 }
 
 .NotaCompleta{
 	padding-top:0px;
-	width:90%;
+	width:95%;
 	text-align:justify;
-	padding-bottom:10px;
-	margin-left:10px;
+/*	padding-bottom:10px;
+*/	margin-left:10px;
+	margin-top:10px;
+	margin-right:10px;
+	overflow:auto;
+	height:auto;
 }
 
 
@@ -828,7 +878,7 @@ body{
 	 width:300px;
 	 height:auto;
 	 float:left;
-	 margin-left:10px;
+	 margin-left:0px;
 }
 .ImagenesNotaImagen{
 	display:inline-block;
@@ -858,8 +908,9 @@ body{
 	margin:auto;
 	text-align:center;
 	width:100%;
-	height:auto;
 	padding-bottom:44px;
+					overflow:auto;
+					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
 	}
 .NotaExtraContenedor{
 	text-align:left;
@@ -869,8 +920,9 @@ body{
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-	margin-bottom:51px;
-	}
+					overflow:auto;
+					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
+*/	}
 .NotaExtraContenedor a{
 	color: inherit;
 	}
@@ -897,6 +949,7 @@ body{
 	width:90%;
 	max-width:350px;
 	text-align:justify;
+	color:#666666;
 	}
 .NotaExtraLeerMas{
 	margin:auto;
@@ -908,6 +961,7 @@ body{
 	max-width:100px;
 	-moz-border-radius:5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px;
+	color:#4D4D4D;
 	}
 /*Notas Extras*/
 
@@ -962,7 +1016,7 @@ body{
 	color:#FFF; 
 	text-align:center;
 	}
-.PortadillasPortada{
+.PortadillasPortada{ 
 	text-align:center; 
 	padding-top:3%; 
 	overflow:auto; 
@@ -1124,7 +1178,7 @@ vertical-align:top;
 	font-family:  Helvetica, sans-serif;
 /*	font-size: 30px;
 */	color: #4D4D4D;
-	font-size:15px;
+	font-size:14px;
 	text-shadow: 0.1em 0.1em #B8B8B8;
 }
 .SlidePrincipalSeccion {
@@ -1171,11 +1225,15 @@ vertical-align:top;
 	margin-right:12px;
 	text-align: center;
 	overflow: auto;
-/*	-webkit-overflow-scrolling: touch;
-*/	margin-bottom:50px;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom:50px;
 	height:600px;
 	
 	
+}
+
+#vertical_seccion{
+	height:200px;
 }
 
 .SlideVerticalSeccion {
@@ -1246,6 +1304,7 @@ vertical-align:top;
 	width:98%;
 	text-shadow: 0.3em 0.2em #B2B2B2 ;
 	font-weight: bold;
+	color:#4D4D4D;
 
 }
 
@@ -1267,6 +1326,8 @@ vertical-align:top;
 
 /*Copi*/
 
+
+
 /*Slide Principal Plaza*/
 .SeccionSeccion{
 	position:absolute;
@@ -1277,19 +1338,23 @@ vertical-align:top;
 	}
 .ContenedorPrincipalSeccion{
 	vertical-align:top;
-	height:441px;
-	width: 100%;
+	height:297px;
+/*	height:212px;
+*/	width: 100%;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	 padding:15px;
-	 
+	padding-top:20px;
+	padding-bottom:7px;
+	margin-left:10px;
+	width:616px;
+/*	 padding:15px;
+*/	 
 	 }
 .SubContenedorPrincipalSeccion{
 	vertical-align:top;  
-	height:441px;  
+	height:297px;  
 	margin:auto;
 	overflow: auto;
-
 	}
 .ContenidoPrincipalSeccion{
 	display:inline-block; 
@@ -1300,13 +1365,12 @@ vertical-align:top;
 	width:297px; 
 	margin:auto;
 	margin-left:5px;
-/*	box-shadow: 5px 5px 5px  #666;
-*/	vertical-align:top;
-
+	box-shadow: 5px 5px 5px  #666;
+	vertical-align:top;
 	}
 .ImagenPrincipalSeccion{
 	display:inline-block;
-	width:263px;
+	width:246px;
 	vertical-align:top;
 	overflow:hidden; 
 	margin:auto;
@@ -1336,7 +1400,7 @@ vertical-align:top;
 	}
 .TituloPrincipalSeccion{
 	font-family:  Helvetica, sans-serif;
-	font-size: 30px; 
+	font-size: 13px; 
 	font-weight:bold;
 	color: #666;
 	text-shadow: 0.1em 0.1em #B8B8B8;
@@ -1377,18 +1441,18 @@ vertical-align:top;
 .NotaContenedor {
 	background: rgba(204,204,204,.4);
 	text-shadow:none;
-	width:98%;
+	width:100%;
 	margin:auto;
 	margin-left:0px;
 }
 
 
 .NotaContenedor img {
-	max-width:600px;
+	width:298px;
 	margin:auto;
 	float:left;
 	width:100%;
-	padding:10px;
+	padding:12px;
 	
 }
 .NotaTitulo{
@@ -1398,6 +1462,7 @@ vertical-align:top;
 	font-weight:bold;
 	padding-top:10px;
 	margin-left:10px;
+	margin-right:12px;
 }
 
 .NotaSumario{
@@ -1405,8 +1470,10 @@ vertical-align:top;
 	font-family:  Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
-	color:#666;
+	color:#666666;
 	margin-left:10px;
+	margin-right:12px;
+
 }
 .NotaAutor{
 	text-align:left;
@@ -1415,6 +1482,7 @@ vertical-align:top;
 	padding-top:30px;
 	font-weight: bold;
 	margin-left:10px;
+	padding-top:10px;
 }
 .NotaFechaCreacion{
 	text-align:left;
@@ -1422,14 +1490,17 @@ vertical-align:top;
 	color: #0c6090;
 	font-weight: bold;
 	margin-left:10px;
+	padding-top:10px;
 }
 
 .NotaCompleta{
-	padding-top:0px;
-	width:90%;
+	width:95%;
 	text-align:justify;
 	padding-bottom:10px;
 	margin-left:10px;
+	color:#808080;
+	padding-top:10px;
+	margin-right:12px;
 }
 
 
@@ -1509,6 +1580,7 @@ vertical-align:top;
 	width:90%;
 	max-width:350px;
 	text-align:justify;
+	color:#666666;
 	}
 .NotaExtraLeerMas{
 	margin:auto;
@@ -1520,6 +1592,7 @@ vertical-align:top;
 	max-width:100px;
 	-moz-border-radius:5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px;
+	color:#4D4D4D;
 	}
 /*Notas Extras*/
 
@@ -1719,13 +1792,13 @@ vertical-align:top;
 	
 	
 	.cronos{
-	color:#d7c605;
+	color:#e2b90e;
 	}
 	.back_cronos{
-	background-color:rgba(216,199,0,.8);
+	background-color:#e2b90e;
 	}
 	.borde_cronos{
-	border: 3px rgb(216,199,0) solid;
+	border: 3px #e2b90e solid;
 	}
 	
 	
@@ -1897,7 +1970,7 @@ vertical-align:top;
 	margin-top:15px;
 	font-size:12px;
 	background-color: rgba(0,0,0,.3);
-	color:#29A9E0;
+	color:#929292;
 	}
 
 	
