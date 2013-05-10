@@ -44,8 +44,8 @@ body{
 	-moz-border-radius:15px 15px 15px 15px; 
 	-webkit-border-radius:15px 15px 15px 15px; 
 	border:1px solid #707070;
-	margin-top:54px;
-}
+/*							margin-top:54px;
+*/}
 
 .HeadDialogoInfo{
 	margin-left:-15px;
