@@ -794,6 +794,9 @@ width:100%;
 	width:100%;
 	text-align:center;
 	z-index:3;
+	overflow:auto;
+	height:auto;
+
 	}
 .NotaContenedor {
 	background: rgba(204,204,204,.4);
@@ -801,6 +804,8 @@ width:100%;
 	width:100%;
 	margin:auto;
 	margin-left:0px;
+	overflow:auto;
+	height:auto;
 }
 
 
