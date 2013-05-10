@@ -575,8 +575,8 @@ width:100%;
 	margin-right:12px;
 	text-align: center;
 	overflow: auto;
-/*	-webkit-overflow-scrolling: touch;
-*/	margin-bottom:50px;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom:50px;
 height:200px;
 
 
@@ -692,8 +692,8 @@ height:200px;
 	margin-left:10px;
 	overflow-y: auto;
 	/*overflow: auto;*/
-/*				-webkit-overflow-scrolling: touch;
-*/	padding-top:20px;
+				-webkit-overflow-scrolling: touch;
+	padding-top:20px;
 	padding-bottom:7px;
 /*	 padding:15px;
 */	 
@@ -1205,8 +1205,8 @@ vertical-align:top;
 	margin-right:12px;
 	text-align: center;
 	overflow: auto;
-/*	-webkit-overflow-scrolling: touch;
-*/	margin-bottom:50px;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom:50px;
 	height:600px;
 	
 	
