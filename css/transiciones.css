@@ -52,6 +52,7 @@
 .panelSeccion{
 	min-width: 30%;
 	height: 375px;
+	overflow:auto;
 	overflow-y: Scroll;
 	overflow-x: hidden;
 	left: -250%;
