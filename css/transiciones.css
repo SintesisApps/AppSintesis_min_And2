@@ -2,7 +2,7 @@
 	/*right: 0;*/
 	left: 0;
 	top: 0;
-	position: fixed;
+	position: absolute;
 }
 
 .TransicionTop{
@@ -27,9 +27,8 @@
 
 .TransicionFadeOut{
 	min-width: 0;
-	height:480px;
-/*	height: 480px;
-*/	top: 0;
+	height: 480px;
+	top: 0;
 	left: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -38,8 +37,7 @@
 	transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-webkit-transition: opacity 1s ease-in-out;
-	z-index: -1;
-
+	z-index: -1;	
 
 }
 .TransicionFadeOut:target{
@@ -84,20 +82,6 @@
 	padding-top:10px;
 	margin-left:5px;
 	text-align:left;
-	
-	}
-	
-	.panelSeccionTitulo2{
-	width:100%;
-	background-position:center center;
-	background-repeat:no-repeat; 
-	background-size:20px;
-	height:20px;
-	color:#666;
-	padding-top:10px;
-	text-align:center;
-	padding:5px;
-	padding-right:5px;
 	
 	}
 .panelSeccionSpacer{
@@ -145,9 +129,8 @@
 /*Panel De Iconos*/
 .panelIcono{
 	min-width: 100px;
-	height:270px;
-/*	height: 270px;
-*/	overflow-y: auto;
+	height: 270px;
+	overflow-y: auto;
 	overflow-x: auto;
 	left: -250%;
 	top:0;
@@ -160,8 +143,7 @@
 	text-align:center;
 	font-size:15px;
 	padding-top:20px;
-/*	padding-top:20px;
-*/	margin-top:150px;
+	margin-top:150px;
 	transition:height 2s;
 	-moz-transition:height 2s;
 	-webkit-transition:height 2s;
@@ -210,13 +192,13 @@
 }
 /*Panel De Iconos*/
 
- @media screen and (min-width: 321px) and (max-width: 640px) {
+ @media screen and (min-width: 501px) and (max-width: 640px) {
 
 .content{
 	/*right: 0;*/
 	left: 0;
 	top: 0;
-	position: fixed;
+	position: absolute;
 }
 
 .TransicionTop{
@@ -241,9 +223,8 @@
 
 .TransicionFadeOut{
 	min-width: 0;
-	height:480px;
-/*	height: 480px;
-*/	top: 0;
+	height: 480px;
+	top: 0;
 	left: 0;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -265,7 +246,7 @@
 
 /*Panel De Secciones*/
 .panelSeccion{
-	min-width: 20%;
+	min-width: 30%;
 	height: 600px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -354,7 +335,7 @@
 	background-color:transparent;
 	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
 	z-index: 2;
-	margin:270px;
+	margin:112px;
 	text-align:center;
 	font-size:15px;
 	padding-top:20px;
@@ -379,9 +360,6 @@
 	border-bottom-color:#FF3300;
 	
 	}
-	
-	
-	
 
 .closeIcono{
     background-color: rgb(102,102,102);
