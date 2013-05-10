@@ -569,8 +569,8 @@ width:100%;
 .ContenedorSlideVertical {
 	width: 296px;
 	background: rgba(204,204,204,.4);
-	position:absolute;
-/*   					 position: relative;
+/*	position:absolute;
+   					 position: relative;
 */	/*margin: 7px;*/
 	margin-left:12px;
 	margin-right:12px;
