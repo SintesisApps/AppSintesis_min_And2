@@ -20,18 +20,129 @@
 	<link href="js/galeria/photoswipe.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="js/galeria/lib/klass.min.js"></script>
 	<script type="text/javascript" src="js/galeria/code.photoswipe-3.0.4.min.js"></script>
+	<!--<script type="text/javascript">
 
-<!--Divs-->
-		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
-		<script type="text/javascript" src="js/iScroll.js"></script>
-		<script type="text/javascript" src="js/jScroll.js"></script>
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$(".DivVertical").jScroll();
-			});
-		</script>
- <!--Fin divs-->   
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+					
+					
+					// onBeforeShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeShow, function(e){
+						console.log('onBeforeShow');
+					});
+					
+					// onShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onShow, function(e){
+						console.log('onShow');
+					});
+					
+					// onBeforeHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeHide, function(e){
+						console.log('onBeforeHide');
+					});
+					
+					// onHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onHide, function(e){
+						console.log('onHide');
+					});
+					
+					// onDisplayImage
+					instance.addEventHandler(PhotoSwipe.EventTypes.onDisplayImage, function(e){
+						console.log('onDisplayImage{');
+						console.log('onDisplayImage - e.action = ' + e.action);
+						console.log('onDisplayImage - e.index = ' + e.index);
+						console.log(instance.getCurrentImage());
+						console.log('onDisplayImage}');
+					});
+					
+					// onResetPosition
+					instance.addEventHandler(PhotoSwipe.EventTypes.onResetPosition, function(e){
+						console.log('onResetPosition');
+					});
+					
+					// onSlideshowStart
+					instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStart, function(e){
+						console.log('onSlideshowStart');
+					});
+					
+					// onSlideshowStop
+					instance.addEventHandler(PhotoSwipe.EventTypes.onSlideshowStop, function(e){
+						console.log('onSlideshowStop');
+					});
+					
+					// onTouch
+					instance.addEventHandler(PhotoSwipe.EventTypes.onTouch, function(e){
+						console.log('onTouch{');
+						console.log('onTouch - e.action = ' + e.action);
+						console.log('onTouch - e.point = ');
+						console.log(e.point);
+						console.log('onTouch}');
+					});
+					
+					// onBeforeCaptionAndToolbarShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarShow, function(e){
+						console.log('onBeforeCaptionAndToolbarShow');
+					});
+					
+					// onCaptionAndToolbarShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarShow, function(e){
+						console.log('onCaptionAndToolbarShow');
+					});
+					
+					// onBeforeCaptionAndToolbarHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeCaptionAndToolbarHide, function(e){
+						console.log('onBeforeCaptionAndToolbarHide');
+					});
+					
+					// onCaptionAndToolbarHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onCaptionAndToolbarHide, function(e){
+						console.log('onCaptionAndToolbarHide');
+					});
+					
+					// onToolbarTap
+					instance.addEventHandler(PhotoSwipe.EventTypes.onToolbarTap, function(e){
+						console.log('onToolbarTap');
+						console.log(e);
+					});
+					
+					// onBeforeZoomPanRotateShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateShow, function(e){
+						console.log('onBeforeZoomPanRotateShow');
+					});
+					
+					// onZoomPanRotateShow
+					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateShow, function(e){
+						console.log('onZoomPanRotateShow');
+					});
+					
+					// onBeforeZoomPanRotateHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onBeforeZoomPanRotateHide, function(e){
+						console.log('onBeforeZoomPanRotateHide');
+					});
+					
+					// onZoomPanRotateHide
+					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateHide, function(e){
+						console.log('onZoomPanRotateHide');
+					});
+					
+					// onZoomPanRotateTransform
+					instance.addEventHandler(PhotoSwipe.EventTypes.onZoomPanRotateTransform, function(e){
+						console.log('onZoomPanRotateTransform');
+						console.log(e);
+					});
+					
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>-->
+    
     
 <!-- geolocalizacion -->
 <script type="text/javascript"
@@ -529,31 +640,6 @@ function LeerNota(id)
 
 </script>
 
-
-		<style type="text/css" media="all">
-
-
-
-			.DivVertical {
-				position:absolute; z-index:1;
-				top:45px; bottom:48px; left:0;
-				width:100%;
-				background:#aaa;
-				overflow:auto;
-			}
-
-			.scroller {
-				position:absolute; z-index:1;
-			/*	-webkit-touch-callout:none;*/
-				-webkit-tap-highlight-color:rgba(0,0,0,0);
-				width:100%;
-				padding:0;
-			}
-
-
-
-		</style>
-
 </head>
 <body >
 <!--<div class="lb-overlay" id="cargando" style="display:'none'"> <img src="imagenes/loading.gif"> </div>-->
@@ -589,7 +675,6 @@ function LeerNota(id)
   
   <!--Slide Vertical-->
   <div class="DivVertical">
-  <div class="scroller">
     <div  class="ContenedorSlideVertical" id="content_slideVertical" >
      <!--
         se carga de php
@@ -600,7 +685,6 @@ function LeerNota(id)
         </div>-->
         
     </div>
-  </div>
   </div>
   <!--Slide Vertical--> 
   
