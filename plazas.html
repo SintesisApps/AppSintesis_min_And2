@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Síntesis</title>
+
+
+<script src="phonegap.js" type="text/javascript"></script>
+
+<link href="general.css" rel="stylesheet">
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+<!--Slide-->
+<link href="slide/royalslider.css" rel="stylesheet">
+<script type="text/javascript" async src="slide/ga.js"></script>
+<script src="slide/jquery.royalslider.min.js"></script>
+
+<!--Slide-->
+
+<script>
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+
+var plaza = getUrlVars()["plaza"];
+
+CargarNoticiasPlaza(plaza);
+
+	function CargarNoticiasPlaza(plaza)
+	{
+		
+			$.ajax(
+			{
+
+				type: "POST",
+				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasPlazas.php",
+				data: "plaza="+plaza,
+				cache: false,
+				success: function(message)
+				{	
+				$('#ContenedorPlaza').html(message);
+				}
+			});
+
+	} 
+	
+
+
+$(window).load(function() {
+      $('#cargando').hide();
+});
+</script>
+    
+</head>
+<body>
+<div class="lb-overlay" id="cargando" style="display:''">
+	<img src="imagenes/loading.gif">
+</div>
+
+<!--Puebla-->
+<div data-role="page" id="ContenedorPlaza" style=" background-image: url(imagenes/patron.png);">
+ </div>
+</body>
+</html>

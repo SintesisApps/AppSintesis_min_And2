@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Síntesis</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+  
+<script>
+ LeerNota(getUrlVars()["id"]);
+  
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+	
+
+	function LeerNota(id)
+	{
+			$.ajax(
+			{
+
+				type: "POST",
+				url: "http://166.78.193.53/APPSintesis/php/Nota.php",
+				data: "id="+id,
+				cache: false,
+				success: function(message)
+				{	
+				message=message.split("&");
+				$('#ContSeccion').append(message[0]);
+				$('#ContImagen').append(message[1]);
+				$('#ContTitulo').append(message[2]);
+				$('#ContSumario').append(message[3]);
+				$('#ContAutor').append(message[4]);
+				$('#ContFecha').append(message[5]);
+				$('#ContNota').append(message[6]);
+				}
+			});
+
+	} 
+	
+	
+
+	
+
+$(window).load(function() {
+      $('#cargando').hide();
+});
+</script>
+
+
+
+</head>
+<body>
+<div class="lb-overlay" id="cargando" style="display:''">
+	<img src="imagenes/loading.gif">
+</div>
+                        
+<!--Página Incial-->
+<div data-role="page" data-dom-cache="false"  id="page" style=" background-image: url(imagenes/patron.png);">
+
+  <div data-role="header" data-position="fixed" class="NotaHead" data-theme="c"> <a href="" data-rel="back" data-role="button" data-theme="c"   data-icon="back" data-iconpos="notext" ></a>
+    <h1 id="ContSeccion"></h1>
+  </div>
+  
+  <div data-role="content"> 
+        <div class="NotaContenedor">
+                <div id="ContImagen"></div>
+                <div  id="ContTitulo" class="NotaTitulo"></div>
+                <div id="ContSumario" class="NotaSumario"></div>
+                <div id="ContAutor" class="NotaAutor"></div>
+                <div id="ContFecha" class="NotaFechaCreacion"></div>
+                <div id="ContNota" class="NotaCompleta"></div>
+        </div>
+	</div>
+</div>	
+<!--Página Incial--> 
+
+
+
+
+</body>
+</html>

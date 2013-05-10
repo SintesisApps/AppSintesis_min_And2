@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Síntesis</title>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+
+
+<link href="general.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  
+  <script>
+ LeerNota(getUrlVars()["id"]);
+  
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+	
+
+	function LeerNota(id)
+	{
+		
+		$('#nota').html('');
+			$.ajax(
+			{
+
+				type: "POST",
+				url: "http://166.78.193.53/APPSintesis/php/Nota.php",
+				data: "id="+id,
+				cache: false,
+				success: function(message)
+				{	
+				$('#nota').html(message);
+				}
+			});
+
+	} 
+	
+	
+
+	
+
+$(window).load(function() {
+      $('#cargando').hide();
+});
+</script>
+
+
+</head>
+<body>
+<div class="lb-overlay" id="cargando" style="display:''">
+	<img src="imagenes/loading.gif">
+</div>
+	<div data-role="page" id="nota">
+    
+	</div>
+
+
+</body>
+</html>
