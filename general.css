@@ -687,6 +687,7 @@ width:100%;
 	text-align:center;
 	z-index:3;
 	height:auto;
+	overflow:auto;
 	}
 .ContenedorPrincipalSeccion{
 	vertical-align:top;
@@ -700,6 +701,7 @@ width:100%;
 	/*overflow: auto;*/
 				-webkit-overflow-scrolling: touch;
 	padding-top:20px;
+	height:auto;
 /*	padding-bottom:7px;
 	 padding:15px;
 */	 
