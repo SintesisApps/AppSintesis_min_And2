@@ -569,8 +569,9 @@ width:100%;
 .ContenedorSlideVertical {
 	width: 296px;
 	background: rgba(204,204,204,.4);
-    position: relative;
-	/*margin: 7px;*/
+	position:absolute;
+/*   					 position: relative;
+*/	/*margin: 7px;*/
 	margin-left:12px;
 	margin-right:12px;
 	text-align: center;
@@ -679,6 +680,7 @@ height:200px;
 /*Slide Principal Plaza*/
 .SeccionSeccion{
 	position:absolute;
+				overflow:auto;
 	top:44px;
 	width:100%;
 	text-align:center;
