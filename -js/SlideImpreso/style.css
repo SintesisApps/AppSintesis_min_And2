@@ -159,3 +159,51 @@
 	background-size:260px;}
 	
  }
+ 
+   @media screen and (min-width: 0px) and (max-width: 500px) {
+.main {
+	width: 320px;
+	height:480px;
+}
+
+.appstore.swiper-container, .appstore .swiper-slide {
+	width: auto;
+	height: 55%;
+}
+.appstore.swiper-container {
+	padding: 20px 0;
+}
+.swiper-wrapper{
+	margin-top:70px;}
+
+.swiper-slide{
+	background-size:150px;
+/*	background-size:150px;
+*/	}
+	
+	
+ }
+ 
+  @media screen and (min-width: 501px) and (max-width: 640px) {
+.main {
+	width: 640px;
+	height:480px;
+}
+
+.appstore.swiper-container, .appstore .swiper-slide {
+	width: auto;
+	height: 55%;
+}
+.appstore.swiper-container {
+	padding: 20px 0;
+}
+.swiper-wrapper{
+	margin-top:70px;}
+
+.swiper-slide{
+	background-size:150px;}
+	
+	
+ }
+ 
+ 

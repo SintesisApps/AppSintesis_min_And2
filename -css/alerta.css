@@ -98,11 +98,11 @@
 	vertical-align:top; 
 	background-image:url(../imagenes/patron-brick.png);
 
-    -webkit-transform: translate(0, -45%);
-    -moz-transform: translate(-45%, -45%);
-    -ms-transform: translate(0%, -45%);
-    -o-transform: translate(0, -45%);
-    transform: translate(0, -45%);
+    -webkit-transform: translate(0, -30%);
+    -moz-transform: translate(-30%, -30%);
+    -ms-transform: translate(0%, -30%);
+    -o-transform: translate(0, -30%);
+    transform: translate(0, -30%);
 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -130,7 +130,7 @@
     visibility: visible;
 }
 .overlayInfo:target+.popupInfo {
-    top: 28%;
+    top: 34%;
     opacity: 1;
     visibility: visible;
 }
