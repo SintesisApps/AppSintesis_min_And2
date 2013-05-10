@@ -51,8 +51,9 @@
 /*Panel De Secciones*/
 .panelSeccion{
 	min-width: 30%;
-	height: 375px;
-/*	overflow:auto;
+	height:auto;
+/*	height: 375px;
+	overflow:auto;
 */	overflow-y: Scroll;
 /*	overflow-x: hidden;
 */	left: -250%;
@@ -132,8 +133,9 @@
 	min-width: 100px;
 	height: 270px;
 	overflow-y: auto;
-				/*	overflow-x: auto;			*/	
-	left: -250%;
+	bottom:51px;
+				/*	overflow-x: auto;			
+	left: -250%;*/	
 	top:0;
 	position: absolute;
 	background-image: url(../imagenes/patronIcono.png);
