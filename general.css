@@ -579,7 +579,8 @@ width:100%;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	margin-bottom:50px;
-height:200px;
+/*height:200px;
+*/height:auto;
 
 
 
