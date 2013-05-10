@@ -566,7 +566,7 @@ width:100%;
 .DivVertical{
 	width:296px;
 	height:auto;
-	overflow-y: scroll
+	overflow:atuo;
 	}
 .ContenedorSlideVertical {
 	width: 296px;
@@ -577,7 +577,7 @@ width:100%;
 	margin-left:12px;
 	margin-right:12px;
 	text-align: center;
-	overflow: scroll;
+	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	margin-bottom:50px;
 height:250px;
