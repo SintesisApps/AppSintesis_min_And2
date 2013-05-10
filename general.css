@@ -906,7 +906,6 @@ width:100%;
 	margin:auto;
 	text-align:center;
 	width:100%;
-	height:auto;
 	padding-bottom:44px;
 	}
 .NotaExtraContenedor{
@@ -917,8 +916,8 @@ width:100%;
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-	margin-bottom:51px;
-	}
+/*	margin-bottom:51px;
+*/	}
 .NotaExtraContenedor a{
 	color: inherit;
 	}
