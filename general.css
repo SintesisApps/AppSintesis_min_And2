@@ -689,8 +689,10 @@ width:100%;
 	}
 .ContenedorPrincipalSeccion{
 	vertical-align:top;
-	height:212px;
+		height:auto;
+
 /*	height:212px;
+	height:212px;
 */	width: 296px;
 	margin-left:10px;
 	overflow-y: auto;
