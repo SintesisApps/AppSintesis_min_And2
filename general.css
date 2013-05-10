@@ -565,6 +565,7 @@ width:100%;
 .DivVertical{
 	width:296px;
 	height:auto;
+	overflow:auto;
 	}
 .ContenedorSlideVertical {
 	width: 296px;

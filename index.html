@@ -1091,7 +1091,7 @@ return false;
 
 <!--Panel de Secciones-->
 
-<div id="panelSecciones"  class="panelSeccion"> 
+<div id="panelSecciones" style="height: 100px;width: 200px; overflow-y: auto; "  class="panelSeccion"> 
   <a href="#home" onClick="$('#panelSecciones').css('left','-250%'), CargarNoticiasHome();">
   <div class="panelSeccionTitulo" style="background-image:url(imagenes/iconos/azules/home@2x.png);"> Home </div>
   
@@ -1217,18 +1217,6 @@ return false;
   
   });
   
-  
-  jQuery(document).ready(function($) {
-    $(".PublicidadSlideVertical").royalSlider({
-    	// general options go gere
-    	autoScaleSlider: true,
-    	thumbs: {
-    		// thumbnails options go gere
-    		spacing: 10,
-    		arrowsAutoHide: true
-    	}
-    });  
-});
     /* 3D Flow demos */
 /*$(function(){
 
