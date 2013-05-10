@@ -131,7 +131,7 @@
 	min-width: 100px;
 	height: 270px;
 	overflow-y: auto;
-	overflow-x: auto;
+				/*	overflow-x: auto;			*/	
 	left: -250%;
 	top:0;
 	position: absolute;
@@ -149,6 +149,11 @@
 	-webkit-transition:height 2s;
 	-o-transition:height 2s;
 	
+	overflow-x: hidden;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 .panelIconoUbicacion{
 	width:50px;
