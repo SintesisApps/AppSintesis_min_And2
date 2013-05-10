@@ -686,6 +686,7 @@ width:100%;
 	width:100%;
 	text-align:center;
 	z-index:3;
+	height:auto;
 	}
 .ContenedorPrincipalSeccion{
 	vertical-align:top;
@@ -699,8 +700,8 @@ width:100%;
 	/*overflow: auto;*/
 				-webkit-overflow-scrolling: touch;
 	padding-top:20px;
-	padding-bottom:7px;
-/*	 padding:15px;
+/*	padding-bottom:7px;
+	 padding:15px;
 */	 
 	 }
 .SubContenedorPrincipalSeccion{
@@ -712,9 +713,10 @@ width:100%;
 .ContenidoPrincipalSeccion{
 	display:inline-block; 
 	overflow:hidden;
-	background: rgba(204,204,204,.4); 
-	height:214px; 
-	padding:0px;
+	background: rgba(204,204,204,.4);
+	height:auto;
+/*	height:214px; 
+*/	padding:0px;
 	width:143px; 
 	margin:auto;
 	margin-left:5px;
