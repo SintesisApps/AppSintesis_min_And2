@@ -458,6 +458,7 @@ body{
 	width:320px;
 	height:51px;
 	z-index:2;
+	margin-bottom:0px;
 		}
 	
 	.HeaderAlternativoFooter{
@@ -879,6 +880,7 @@ width:100%;
 	margin-right:10px;
 	overflow:auto;
 	height:auto;
+	color:#808080;
 }
 
 
