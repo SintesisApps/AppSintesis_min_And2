@@ -449,7 +449,7 @@ body{
 	}
 	
 	.HeaderAlternativoFooter{
-	background-image:url(imagenes/barra@2x.png);
+	background-image:url(imagenes/barra.png);
 	background-repeat:no-repeat;
 	background-size:320px;
 	font-family:  Helvetica, sans-serif;
@@ -1102,7 +1102,7 @@ width:100%;
 	}
 	
 	.HeaderAlternativoFooter{
-	background-image:url(imagenes/barra@2x.png);
+	background-image:url(imagenes/barra.png);
 	background-repeat:no-repeat;
 	background-size:640px 51px;
 	font-family:  Helvetica, sans-serif;
