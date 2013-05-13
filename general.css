@@ -470,7 +470,7 @@ body{
 	width:320px;
 	z-index:2;
 	vertical-align:top;
-	margin-bottom:0px;
+	margin-bottom:-1px;
 		}
 	/*Slide Principal*/
 .ContenedorSlidePrincipal {
