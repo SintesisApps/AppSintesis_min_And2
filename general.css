@@ -407,7 +407,7 @@ body{
 
 
  
-@media screen and (min-width: 0px) and (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
 	
 	#home{
 /*		height:480px;
@@ -470,7 +470,7 @@ body{
 	width:320px;
 	z-index:2;
 	vertical-align:top;
-	margin-bottom:3px;
+	margin-bottom:0px;
 		}
 	/*Slide Principal*/
 .ContenedorSlidePrincipal {
