@@ -217,8 +217,6 @@
 			
 			function slidePrincipal()
 			{
-				
-				$('#cont_slideprincipal').html('<img src="imagenes/loading.gif" />');
 				 $.ajax({
 					type: "POST",
 				url: "http://166.78.193.53/APPSintesis/php/slideprincipal_ip.php",
@@ -226,9 +224,8 @@
 				cache: false,
 				success: function(message)
 				{	
-				setInterval($('#cont_slideprincipal').html(message),5000);
-<!--				$('#cont_slideprincipal').html(message);-->	
-			}
+				$('#cont_slideprincipal').html(message);
+				}
 				});
 				
 				
@@ -250,9 +247,6 @@
 			function slideVertical()
 			{
 				
-				$('#content_slideVertical').html('<img src="imagenes/loading.gif" />');
-				
-				
 				$.ajax({
 					type: "POST",
 				url: "http://166.78.193.53/APPSintesis/php/slide_vertical.php",
@@ -260,8 +254,7 @@
 				cache: false,
 				success: function(message)
 				{	
-					setInterval($('#content_slideVertical').html(message),5000);
-				<!--$('#content_slideVertical').html(message);-->
+				$('#content_slideVertical').html(message);
 				}
 				});
 			}
@@ -357,7 +350,7 @@
 		minuto_minuto();
 		function slideVertical2()
 			{//ContenedorDivMedio
-				$('.DivVertical').html('<img src="imagenes/loading.gif" />');
+				
 				$.ajax({
 				type: "POST",
 				url: "http://166.78.193.53/APPSintesis/php/slide_vertical.php",
@@ -377,10 +370,7 @@
 	} 
 	
 	function CargarNoticiasPlaza(plaza)
-	{			
-			$('.ContenedorPrincipalSeccion').html('<img src="imagenes/loading.gif" />');
-			$('.DivVertical').html('<img src="imagenes/loading.gif" />');
-
+	{
 			$.ajax(
 			{
 
@@ -403,12 +393,14 @@
 					//color
 					//$("#name_SeccionSeccion").css({'background':'#5abfcf'});
 						
-					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
-					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);
-
-<!--						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);-->	
-					
-<!--						$(".DivVertical").html(datos[i].slide_vertical);-->	
+						
+						$(".ContenedorPrincipalSeccion").html(
+							datos[i].slide_principal
+						);
+						
+						$(".DivVertical").html(
+						datos[i].slide_vertical
+						);
 						
 						$("#minuto_plaza").html(
 						datos[i].ultimas_noticias
@@ -427,9 +419,6 @@
 	} 
 	function cargar_seccion(seccion)
 	{
-			$('.ContenedorPrincipalSeccion').html('<img src="imagenes/loading.gif" />');
-			$('.DivVertical').html('<img src="imagenes/loading.gif" />');
-
 		 $.ajax(
 			{
 
@@ -454,14 +443,17 @@
 					$("#name_SeccionSeccion").addClass('SeccionSeccion');
 						
 						
-					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
-					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);
 						
 						
-/*						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
 						
-						$(".DivVertical").html(datos[i].slide_vertical);	
-*/						
+						$(".ContenedorPrincipalSeccion").html(
+							datos[i].slide_principal
+						);
+						
+						$(".DivVertical").html(
+						datos[i].slide_vertical
+						);	
+						
 						$("#minuto_plaza").html(
 						datos[i].ultimas_noticias
 						);
@@ -477,7 +469,6 @@
 
 		 
 	}
-
 
 		
 	/*	function CargarNoticiasHome()
@@ -577,8 +568,6 @@
 
 function LeerNota(id)
 	{
-			$('.ExtrasPlaza').html('<img src="imagenes/loading.gif" />');
-
 		//$('.NotaTitulo').html("Nose titulo extra");
 			$.ajax(
 			{
@@ -636,18 +625,16 @@ function LeerNota(id)
 					datos[i].nota
 					);
 					
-					setInterval($('.ExtrasPlaza').html(datos[i].nota_extra),5000);
-
+					$('.ExtrasPlaza').html(
+					datos[i].nota_extra
+					);
 					
-<!--					$('.ExtrasPlaza').html(datos[i].nota_extra);-->	
-				
 					
 					}
 				
 				}
 			});
 	}
-
 
 
 
