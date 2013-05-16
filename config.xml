@@ -49,10 +49,10 @@
 
     <gap:splash src="imagenes/splashscreen/ldpi.png"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="imagenes/splashscreen/mdpi.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="imagenes/splashscreen/splash_vertical.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="imagenes/splashscreen/hdpiv.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="imagenes/splashscreen/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="imagenes/splashscreen/ldpi.png"         gap:platform="blackberry" />
-    <gap:splash src="imagenes/splashscreen/splash_vertical.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="imagenes/splashscreen/hdpiv.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="imagenes/splashscreen/splash_vertical1.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="imagenes/splashscreen/mdpi_v.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="imagenes/splashscreen/mdpi.png"     gap:platform="ios"     width="1024" height="768" />
