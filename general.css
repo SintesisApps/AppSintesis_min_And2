@@ -468,7 +468,7 @@ body{
 	width:320px;
 	z-index:2;
 	vertical-align:top;
-	margin-bottom:-2px;
+	margin-bottom:-3px;
 		}
 	/*Slide Principal*/
 .ContenedorSlidePrincipal {
@@ -621,17 +621,17 @@ width:100%;
 	background: rgba(204,204,204,.9);
 	width:100%;
 	margin-top:7px;
-	height:135.7px;
+	height:125.7px;
 	overflow:auto;
-	background:#000000;
 	
 }
 .PublicidadSlideVertical img{
-/*	background: rgba(204,204,204,.9);
-*/	width:296px;
-	background:#000000;
+	background: rgba(204,204,204,.9);
+	width:296px;
+
+	
 /*   width:260px;
-*/   height:112px;
+*/   height:125px;
 /*	height:125.7px;
 */	/*margin-left:12px;
 	margin-bottom:10px;
