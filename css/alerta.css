@@ -84,10 +84,12 @@
     display: inline-block;
     opacity: 0;
 	right:0;
-    padding: 15px;
-	padding-top:0;
-    position: fixed;
-    text-align: justify;
+	padding:0px;
+/*    padding: 15px;
+*/	padding-top:0;
+position:relative;
+/*    position: fixed;
+*/    text-align: justify;
     visibility: hidden;
     z-index: 10;
 	
