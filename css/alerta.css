@@ -81,8 +81,8 @@
 .popupInfo {
     background-color: #fff;
     border: 3px solid #fff;
-    display: inline-block;
-    opacity: 0;
+/*    display: inline-block;
+*/    opacity: 0;
 	right:0;
 	padding:0px;
 /*    padding: 15px;
@@ -134,7 +134,7 @@ position:absolute;
 .overlayInfo:target+.popupInfo {
 /*    top: 28%;
 */    opacity: 1;
-top:44px;
+top:140px;
     visibility: visible;
 }
 .close {
