@@ -808,27 +808,30 @@ width:100%;
 	width:100%;
 	text-align:center;
 	z-index:3;
-	overflow:auto;
-	height:auto;
-	-webkit-overflow-scrolling: touch;
-	}
+/*								overflow:auto;
+*/	height:auto;
+/*									-webkit-overflow-scrolling: touch;
+*/	}
 .NotaContenedor {
-	background: rgba(204,204,204,.4);
+/*							background: rgba(204,204,204,.4);
+*/	background-color:#000;
 	text-shadow:none;
-	width:300px;
-	margin:auto;
-	margin-left:0px;
-	overflow:auto;
-	height:auto;
-	-webkit-overflow-scrolling: touch;}
+	width:100%;
+/*	margin:auto;
+*/	margin-left:0px;
+/*										overflow:auto;
+*/	height:auto;
+				/*	-webkit-overflow-scrolling: touch;
+				*/	
+	}
 
 
 .NotaContenedor img {
 	width:300px;
 	margin:auto;
 	float:left;
-	width:50%;
-	padding:12px;
+/*	width:50%;
+*/	padding:12px;
 	
 }
 .NotaTitulo{
@@ -878,7 +881,8 @@ width:100%;
 */	margin-left:10px;
 	margin-top:10px;
 	margin-right:10px;
-	overflow:auto;
+					/*	overflow:auto;
+					*/	
 	height:auto;
 	color:#808080;
 }
@@ -922,9 +926,9 @@ width:100%;
 	text-align:center;
 	width:100%;
 	padding-bottom:44px;
-					overflow:auto;
+/*					overflow:auto;
 					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
-	}
+*/	}
 .NotaExtraContenedor{
 	text-align:left;
 	vertical-align:top;
@@ -933,9 +937,11 @@ width:100%;
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-					overflow:auto;
+						margin-bottom:51px;
+
+/*					overflow:auto;
 					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
-*/	}
+*/*/	}
 .NotaExtraContenedor a{
 	color: inherit;
 	}

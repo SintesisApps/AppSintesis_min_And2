@@ -52,7 +52,7 @@
     <gap:splash src="imagenes/splashscreen/hdpiv.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="imagenes/splashscreen/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="imagenes/splashscreen/ldpi.png"         gap:platform="blackberry" />
-    <gap:splash src="imagenes/splashscreen/ldpi.png" gap:platform="winphone" />
+   
 	
 	
 	<access origin="*" />
