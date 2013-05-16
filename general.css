@@ -623,11 +623,13 @@ width:100%;
 	margin-top:7px;
 	height:135.7px;
 	overflow:auto;
+	background:#000000;
 	
 }
 .PublicidadSlideVertical img{
-	background: rgba(204,204,204,.9);
-	width:296px;
+/*	background: rgba(204,204,204,.9);
+*/	width:296px;
+	background:#000000;
 /*   width:260px;
 */   height:112px;
 /*	height:125.7px;
@@ -650,7 +652,7 @@ width:100%;
 	width: 125.7px;
 	height:auto;
 /*	height:125.7px;
-*/	background:#3FF;
+	background:#3FF;*/
 /*	box-shadow: 5px 5px 5px #000;
 */}
 .SlideVerticalContenido {
@@ -813,7 +815,7 @@ width:100%;
 .NotaContenedor {
 	background: rgba(204,204,204,.4);
 	text-shadow:none;
-	width:100%;
+	width:300px;
 	margin:auto;
 	margin-left:0px;
 	overflow:auto;
@@ -895,7 +897,7 @@ width:100%;
 	display:inline-block;
 	}
 .ImagenesNotaImagen img {
-	width:100%;
+	width:300px;
 	vertical-align:top;
 	overflow:hidden;
 }
