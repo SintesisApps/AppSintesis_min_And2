@@ -11,10 +11,10 @@ a:hover {
 	text-decoration: none;
 }
 body{
-/*	background-image: url(imagenes/patron.png);
-*/	font-family:  Helvetica, sans-serif;
-background-color:#FFFFCC;
-	height:400px;
+	background-image: url(imagenes/patron.png);
+	font-family:  Helvetica, sans-serif;
+/*background-color:#FFFFCC;
+*/	height:400px;
 	width:50%; 
 	
 	
@@ -410,9 +410,10 @@ background-color:#FFFFCC;
 @media screen and (min-width: 0px) and (max-width: 500px) {
 	
 	body{
-/*	background-image: url(imagenes/patron.png);
-*/	font-family:  Helvetica, sans-serif;
-	height:auto;
+	background-image: url(imagenes/patron.png);
+	font-family:  Helvetica, sans-serif;
+/*	background:#00FFFF;
+*/	height:auto;
 	width:50%; 
 	
 	
@@ -423,7 +424,8 @@ background-color:#FFFFCC;
 /*		height:480px;
 */							
 
-	}
+/*background:#900;
+*/	}
 	/*Slide miniaturas*/
 
 	.ContenedorSlideMiniaturas {
@@ -588,7 +590,7 @@ width:100%;
 /*Slide Vertical*/
 .DivVertical{
 	width:296px;
-	height: 300%;
+	height: auto;
 /*	overflow:auto;
 */	display:inline-block;
 	}
@@ -605,8 +607,8 @@ width:100%;
 */	margin-bottom:50px;
 height:auto;
 /*height:200px;
+height: expression(this.scrollHeight < 1000? "1000px": "auto");
 */
-
 
 
 
@@ -728,8 +730,8 @@ height:auto;
 */	width: 296px;
 	margin-left:10px;
 	overflow-y: auto;
-	/*overflow: auto;*/
-				-webkit-overflow-scrolling: touch;
+	/*overflow: auto;
+				-webkit-overflow-scrolling: touch;*/
 	padding-top:20px;
 	height:auto;
 /*	padding-bottom:7px;
@@ -838,7 +840,7 @@ height:auto;
 /*										overflow:auto;
 */	
 	height: 300%;
-	margin-bottom:20px;
+	margin-bottom:0px;
 				/*	-webkit-overflow-scrolling: touch;
 				*/	
 	}
@@ -955,7 +957,7 @@ height:auto;
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-						margin-bottom:51px;
+						margin-bottom:31px;
 
 /*					overflow:auto;
 					-webkit-overflow-scrolling: touch;/*	margin-bottom:51px;
@@ -1600,7 +1602,7 @@ vertical-align:top;
 	margin-left:2%;
 	margin:auto;
 	display:inline-block;
-	margin-bottom:51px;
+	margin-bottom:31px;
 	}
 .NotaExtraContenedor a{
 	color: inherit;
