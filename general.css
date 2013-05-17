@@ -412,7 +412,6 @@ background-color:#FFFFCC;
 	body{
 /*	background-image: url(imagenes/patron.png);
 */	font-family:  Helvetica, sans-serif;
-	background:#00FFFF;
 	height:auto;
 	width:50%; 
 	
@@ -424,7 +423,6 @@ background-color:#FFFFCC;
 /*		height:480px;
 */							
 
-background:#900;
 	}
 	/*Slide miniaturas*/
 
@@ -605,8 +603,9 @@ width:100%;
 /*		overflow: auto;
 -webkit-overflow-scrolling: touch;
 */	margin-bottom:50px;
+height:auto;
 /*height:200px;
-*/height: expression(this.scrollHeight < 1000? "1000px": "auto");
+*/
 
 
 
@@ -839,7 +838,7 @@ width:100%;
 /*										overflow:auto;
 */	
 	height: 300%;
-	margin-bottom:51px;
+	margin-bottom:20px;
 				/*	-webkit-overflow-scrolling: touch;
 				*/	
 	}
