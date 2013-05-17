@@ -11,10 +11,12 @@ a:hover {
 	text-decoration: none;
 }
 body{
-	background-image: url(imagenes/patron.png);
-	font-family:  Helvetica, sans-serif;
+/*	background-image: url(imagenes/patron.png);
+*/	font-family:  Helvetica, sans-serif;
+background-color:#FFFFCC;
 	height:400px;
 	width:50%; 
+	
 	
 	}
 	
@@ -407,9 +409,21 @@ body{
  
 @media screen and (min-width: 0px) and (max-width: 500px) {
 	
+	body{
+/*	background-image: url(imagenes/patron.png);
+*/	font-family:  Helvetica, sans-serif;
+	background:#00FFFF;
+	height:auto;
+	width:50%; 
+	
+	
+	}
+
 	#home{
+		height:auto;
 /*		height:480px;
-*/							height: expression(this.scrollHeight < 301? "300px": "auto");
+*/							
+
 background:#900;
 	}
 	/*Slide miniaturas*/
@@ -577,7 +591,6 @@ width:100%;
 .DivVertical{
 	width:296px;
 	height: 300%;
-	background-color:#FFFF00;
 /*	overflow:auto;
 */	display:inline-block;
 	}
@@ -817,8 +830,8 @@ width:100%;
 /*									-webkit-overflow-scrolling: touch;
 */	}
 .NotaContenedor {
-/*	background: rgba(204,204,204,.4);
-*/	
+	background: rgba(204,204,204,.4);
+	
 	text-shadow:none;
 	width:100%;
 /*	margin:auto;
@@ -826,7 +839,6 @@ width:100%;
 /*										overflow:auto;
 */	
 	height: 300%;
-	background:#996633;
 	margin-bottom:51px;
 				/*	-webkit-overflow-scrolling: touch;
 				*/	
@@ -890,7 +902,7 @@ width:100%;
 	margin-right:10px;
 					/*	overflow:auto;
 					*/	
-	height: auto !important;
+	height: 300%;
 	color:#808080;
 }
 
