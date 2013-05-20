@@ -586,6 +586,12 @@ function LeerNota(id)
 	{
 			
 			$('.ExtrasPlaza').html('<img src="imagenes/loading.gif" />');
+			document.getElementById("div_nt").innerHTML="";
+						document.getElementById("div_ns").innerHTML="";
+						document.getElementById("div_na").innerHTML="";
+						document.getElementById("div_nfc").innerHTML="";
+						document.getElementById("div_nc").innerHTML="";
+						document.getElementById("div_nep").innerHTML="";
 
 		//$('.NotaTitulo').html("Nose titulo extra");
 			$.ajax(
@@ -601,7 +607,10 @@ function LeerNota(id)
 					//alert ("datos:"+datos);
 					for(i=0;i<datos.length;i++)
 					{
-						
+					$('#img_cont').html(
+					datos[i].imagen
+					);
+
 					
 				/*	$('.ImagenesNotaImagen').html(
 					'<img src="http://166.78.193.53/images/'+datos[i].imagen+'">'+
