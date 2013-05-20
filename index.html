@@ -583,17 +583,14 @@
 });*/
 
 function LeerNota(id)
-	{
-			
-			$('.ExtrasPlaza').html('<img src="imagenes/loading.gif" />');
-			document.getElementById("div_nt").innerHTML="";
+	{ CargarNoticiasHome();
+		$('.ExtrasPlaza').html('<img src="imagenes/loading.gif" />');
+		document.getElementById("div_nt").innerHTML="";
 						document.getElementById("div_ns").innerHTML="";
 						document.getElementById("div_na").innerHTML="";
 						document.getElementById("div_nfc").innerHTML="";
 						document.getElementById("div_nc").innerHTML="";
 						document.getElementById("div_nep").innerHTML="";
-
-		//$('.NotaTitulo').html("Nose titulo extra");
 			$.ajax(
 			{
 
@@ -604,15 +601,25 @@ function LeerNota(id)
 				success: function(message)
 				{
 					datos = JSON.parse(message);
-					//alert ("datos:"+datos);
 					for(i=0;i<datos.length;i++)
 					{
+						//limpiamos contenidos
+						
+						/*$('#div_nt').empty();
+						$('#div_ns').empty();
+						$('#div_na').empty();
+						$('#div_nfc').empty();
+						$('#div_nc').empty();
+						$('#div_nep').empty();*/
+						
+						//modificamos las imagenes
+					
+					//$('#Gallery').html(
 					$('#img_cont').html(
 					datos[i].imagen
 					);
-
+					/*$('.ImagenesNotaImagen').html(
 					
-				/*	$('.ImagenesNotaImagen').html(
 					'<img src="http://166.78.193.53/images/'+datos[i].imagen+'">'+
 					'<div class="ZoomImagenNota">'+
 						'<a href="http://166.78.193.53/images/'+datos[i].imagen+'" >'+
@@ -620,16 +627,14 @@ function LeerNota(id)
 					'</div>'+
 					'<div class="MasImagenNota">'+
 					'</div>'
-					);
-					*/
+					);*/
+					
 					document.getElementById("name_section").innerHTML="";
 					$('.NotaSeccion').html(
 					datos[i].seccion
 					);
-					//alert("pseudo:"+datos[i].seccion_pseudo+"nombre de la clase:back_"+datos[i].seccion_pseudo);
-					/*pseudo back_nacion NotaSeccion*/
-					//$('.NotaSeccion').attr('class', 'back_'+datos[i].seccion_pseudo+' NotaSeccion');
-					$("#name_section").removeAttr("class");//removemos el  que tiene 
+					
+					$("#name_section").removeAttr("class");
 					$("#name_section").addClass('back_'+datos[i].seccion_pseudo);
 					$("#name_section").addClass('NotaSeccion');
 					$("#name_section").css({'color':'#fff'});
@@ -641,9 +646,9 @@ function LeerNota(id)
 					$('.NotaSumario').html(
 					datos[i].sumario
 					);
-					/*$('.NotaAutor').html(
+					$('.NotaAutor').html(
 					datos[i].autor
-					);*/
+					);
 					
 					$('.NotaFechaCreacion').html(
 					datos[i].fecha
@@ -653,19 +658,15 @@ function LeerNota(id)
 					datos[i].nota
 					);
 					
+					//$('.ExtrasPlaza').html(datos[i].nota_extra);
 					setInterval($('.ExtrasPlaza').html(datos[i].nota_extra),5000);
-
 					
-<!--					$('.ExtrasPlaza').html(datos[i].nota_extra);-->	
-				
 					
 					}
 				
 				}
 			});
 	}
-
-
 
 
 </script>
@@ -718,32 +719,36 @@ function LeerNota(id)
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> 
     <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a>
     </div>
-    <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
+    <div style=" display:inline-block; width:65%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
   </div>
-  
-  <div class="back_nacion NotaSeccion" id="name_section"></div>
-  
+  <div class="back_nacion NotaSeccion" id="name_section">
+
+  </div>
   <div id="contenedor_Nota" id="ref_contenedor_Nota">
   	<div class="NotaContenedor" >
-    
-    	   		
-	<div id="img_cont">
+            
+   		<div id="img_cont">
         
         
         </div>
-        
+  
+  
         <div class="NotaTitulo" id="div_nt"></div>
         <div class="NotaSumario" id="div_ns"></div>
-<!--         <div class="NotaAutor"></div>
--->     <div class="NotaFechaCreacion"  id="div_nfc"></div>
+        
+         <div class="NotaAutor" id="div_na"></div>
+         <div class="NotaFechaCreacion" id="div_nfc"></div>
+        
         <div class="NotaCompleta" id="div_nc"> </div>
+        
         <div class="ExtrasPlaza" id="div_nep">
           <!--  PHP-->
-        </div>
-     </div>
+         </div>
+            
+      </div>
   </div>
 </div>
-<!-- Fin Nota--> 
+<!--Fin Nota-->
 
 
 <!--Secciones Plazas-->
