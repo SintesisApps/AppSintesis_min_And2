@@ -747,8 +747,8 @@ height: expression(this.scrollHeight < 1000? "1000px": "auto");
 .ContenidoPrincipalSeccion{
 	display:inline-block; 
 	overflow:hidden;
-/*	background: rgba(204,204,204,.4);
-*/	height:212px;
+	background: rgba(204,204,204,.4);
+	height:212px;
 /*	height:214px; 
 */	padding:0px;
 	width:143px; 
