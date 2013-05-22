@@ -83,8 +83,6 @@
     background-color: #fff;
     border: 3px solid #fff;
     display: inline-block;
-	    left: 50%;
-
     opacity: 0;
 	right:0;
     padding: 15px;
@@ -166,8 +164,6 @@
 .popup p, .popup div {
     margin-bottom: 10px;
 }
-
-
 .popupInfo p, .popupInfo div {
     margin-bottom: 10px;
 }
