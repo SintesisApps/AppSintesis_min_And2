@@ -126,12 +126,12 @@
 }
 
 .overlay:target+.popup {
-    top: 50%;
+    top: 44px;
     opacity: 1;
     visibility: visible;
 }
 .overlayInfo:target+.popupInfo {
-    top: 34%;
+    top: 170px;
     opacity: 1;
     visibility: visible;
 }
