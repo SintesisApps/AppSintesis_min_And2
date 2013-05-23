@@ -326,6 +326,7 @@
 	function CargarNoticiasHome()
 	{
 		document.getElementById("cargando").style.display='';
+		
 		slideVertical2();
 		slidePrincipal();
 		/*slideMiniatura();*/
@@ -375,21 +376,13 @@
 							datos[i].titulo_seccion
 						);
 						$("#name_SeccionSeccion").removeAttr("class");
-					$("#name_SeccionSeccion").addClass('back_nacion');
-					$("#name_SeccionSeccion").addClass('SeccionSeccion');
-					//color
-					//$("#name_SeccionSeccion").css({'background':'#5abfcf'});
-						
-					/*setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
-					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);*/
+						$("#name_SeccionSeccion").addClass('back_nacion');
+						$("#name_SeccionSeccion").addClass('SeccionSeccion');
 
 						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
 						$(".DivVertical").html(datos[i].slide_vertical);	
-						/*$("#minuto_plaza").html(
-						datos[i].ultimas_noticias
-						);*/
 						
-						
+						setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
 					}
 					
 				
@@ -426,16 +419,9 @@
 					$("#name_SeccionSeccion").addClass('SeccionSeccion');
 						
 						
-/*					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
-					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);
-*/						
 						
 					$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
 					$(".DivVertical").html(datos[i].slide_vertical);	
-					
-						/*$("#minuto_plaza").html(
-						datos[i].ultimas_noticias
-						);*/
 					setInterval(function(){document.getElementById("cargando").style.display='none'},10000);
 						
 					}
