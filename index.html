@@ -195,12 +195,12 @@
 					slideMiniatura();
 					slideVertical();
 /*					galeriaImagenes();
-*/					galeria_video('nacionales');	
-					minuto_minuto();
+					galeria_video('nacionales');	
+*/						minuto_minuto();
 					CargarNoticiasHomeGal();
 				
                
-				
+				setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
 				
 				
 				
@@ -225,17 +225,17 @@
 			function slidePrincipal()
 			{
 				
-				$('#cont_slideprincipal').html('<img src="imagenes/loading.gif" />');
+				//$('#cont_slideprincipal').html('<img src="imagenes/loading.gif" />');
 				 $.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/RecursosApp/minandroid/php/slideprincipal_minand.php",
-				data: "",
-				cache: false,
-				success: function(message)
-				{	
-				setInterval($('#cont_slideprincipal').html(message),5000);
-<!--				$('#cont_slideprincipal').html(message);-->	
-			}
+						url: "http://166.78.193.53/RecursosApp/minandroid/php/slideprincipal_minand.php",
+						data: "",
+						cache: false,
+						success: function(message)
+						{	
+					<!--	setInterval($('#cont_slideprincipal').html(message),5000);-->	
+						$('#cont_slideprincipal').html(message);
+					}
 				});
 				
 				
@@ -258,7 +258,7 @@
 			function slideVertical()
 			{
 				
-				$('#content_slideVertical').html('<img src="imagenes/loading.gif" />');
+				//$('#content_slideVertical').html('<img src="imagenes/loading.gif" />');
 				
 				
 				$.ajax({
@@ -268,13 +268,13 @@
 				cache: false,
 				success: function(message)
 				{	
-					setInterval($('#content_slideVertical').html(message),5000);
-				<!--$('#content_slideVertical').html(message);-->
+					<!--setInterval($('#content_slideVertical').html(message),5000);-->
+				$('#content_slideVertical').html(message);
 				}
 				});
 			}
 			
-			function galeriaImagenes ()
+			/*function galeriaImagenes ()
 			{
 				$.ajax({
 					type: "POST",
@@ -286,9 +286,9 @@
 				$('#content_gal').html(message);
 				}
 				});
-			}
+			}*/
 			
-			function galeria_video(plaza)
+			/*function galeria_video(plaza)
 			{
 
 				$.ajax({
@@ -302,7 +302,7 @@
 				$('.contvideogaleria').html(message);
 				}
 				});
-			}
+			}*/
 
 			
 /*			function galeria_video()
@@ -319,7 +319,7 @@
 				});
 			}
 */			
-			function minuto_minuto()
+			/*function minuto_minuto()
 			{
 				$.ajax({
 					type: "POST",
@@ -331,7 +331,7 @@
 				$('.Minuto_A_Minuto').html(message);
 				}
 				});
-			}
+			}*/
 			
 		
 	</script>
@@ -352,21 +352,19 @@
 		var ref = window.open('https://www.facebook.com/SintesisPuebla?fref=ts', '_blank', 'location=yes');
 		}
 		
-		function CargarNoticiasHome()
+	function CargarNoticiasHome()
 	{
-	//alert("mmbn");
-		
-		//$("#vertical_seccion").hide();
+		document.getElementById("cargando").style.display='';
 		slideVertical2();
 		slidePrincipal();
-		slideMiniatura();
+		/*slideMiniatura();*/
 		CargarNoticiasHomeGal();
-/*		galeriaImagenes();
-*/		galeria_video();	
-		minuto_minuto();
+		/*galeriaImagenes();*/
+		/*galeria_video('nacionales');	*/	
+		/*minuto_minuto();*/
 		function slideVertical2()
 			{//ContenedorDivMedio
-				$('.DivVertical').html('<img src="imagenes/loading.gif" />');
+				$('.vertical_home').html('<img src="imagenes/loading.gif" />');
 				$.ajax({
 				type: "POST",
 				url: "http://166.78.193.53/RecursosApp/minandroid/php/slide_vertical_minand.php",
@@ -374,21 +372,20 @@
 				cache: false,
 				success: function(message)
 				{
-					$('.DivVertical').html(
+					$('.vertical_home').html(
 					' <div  class="ContenedorSlideVertical" id="content_slideVertical" >'+message+'</div>'
 					
 					)
 				}
 				});
 			}
-		
+		setInterval(function(){document.getElementById("cargando").style.display='none'},7000);
 		
 	} 
 	
 	function CargarNoticiasPlaza(plaza)
 	{			
-			$('.ContenedorPrincipalSeccion').html('<img src="imagenes/loading.gif" />');
-			$('.DivVertical').html('<img src="imagenes/loading.gif" />');
+			document.getElementById("cargando").style.display='';
 
 			$.ajax(
 			{
@@ -412,20 +409,16 @@
 					//color
 					//$("#name_SeccionSeccion").css({'background':'#5abfcf'});
 						
-					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
-					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);
+					/*setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
+					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);*/
 
-<!--						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);-->	
-					
-<!--						$(".DivVertical").html(datos[i].slide_vertical);-->	
-						
-						$("#minuto_plaza").html(
+						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
+						$(".DivVertical").html(datos[i].slide_vertical);	
+						/*$("#minuto_plaza").html(
 						datos[i].ultimas_noticias
-						);
+						);*/
 						
-						$(".Video_seccion").html(
-						datos[i].video
-						);
+						
 					}
 					
 				
@@ -436,8 +429,7 @@
 	} 
 	function cargar_seccion(seccion)
 	{
-			$('.ContenedorPrincipalSeccion').html('<img src="imagenes/loading.gif" />');
-			$('.DivVertical').html('<img src="imagenes/loading.gif" />');
+			document.getElementById("cargando").style.display='';
 
 		 $.ajax(
 			{
@@ -463,21 +455,18 @@
 					$("#name_SeccionSeccion").addClass('SeccionSeccion');
 						
 						
-					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
+/*					setInterval($(".ContenedorPrincipalSeccion").html(datos[i].slide_principal),5000);
 					setInterval($(".DivVertical").html(datos[i].slide_vertical),5000);
-						
-						
-/*						$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
-						
-						$(".DivVertical").html(datos[i].slide_vertical);	
 */						
-						$("#minuto_plaza").html(
-						datos[i].ultimas_noticias
-						);
 						
-						$(".Video_seccion").html(
-						datos[i].video
-						);
+					$(".ContenedorPrincipalSeccion").html(datos[i].slide_principal);
+					$(".DivVertical").html(datos[i].slide_vertical);	
+					
+						/*$("#minuto_plaza").html(
+						datos[i].ultimas_noticias
+						);*/
+					setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
+						
 					}
 					
 					
@@ -586,8 +575,8 @@
 
 function LeerNota(id)
 	{ 
-	
-		$('.ExtrasPlaza').html('<img src="imagenes/loading.gif" />');
+		CargarNoticiasHome();
+		$document.getElementById("cargando").style.display='';
 		document.getElementById("div_nt").innerHTML="";
 						document.getElementById("div_ns").innerHTML="";
 						document.getElementById("div_na").innerHTML="";
@@ -607,13 +596,6 @@ function LeerNota(id)
 					for(i=0;i<datos.length;i++)
 					{
 						//limpiamos contenidos
-						
-						/*$('#div_nt').empty();
-						$('#div_ns').empty();
-						$('#div_na').empty();
-						$('#div_nfc').empty();
-						$('#div_nc').empty();
-						$('#div_nep').empty();*/
 						
 						//modificamos las imagenes
 					
@@ -661,9 +643,9 @@ function LeerNota(id)
 					datos[i].nota
 					);
 					
-					//$('.ExtrasPlaza').html(datos[i].nota_extra);
-					setInterval($('.ExtrasPlaza').html(datos[i].nota_extra),5000);
-					
+					$('.ExtrasPlaza').html(datos[i].nota_extra);
+					/*setInterval($('.ExtrasPlaza').html(datos[i].nota_extra),5000);*/
+					setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
 					
 					}
 				
@@ -676,6 +658,7 @@ function LeerNota(id)
 
 </head>
 <body >
+<div class="lb-overlay_loading" id="cargando" style="display:''"> <img src="imagenes/loading.gif"> </div>
 <!--<div class="lb-overlay" id="cargando" style="display:'none'"> <img src="imagenes/loading.gif"> </div>-->
 
 <!-- Home -->
@@ -698,7 +681,7 @@ function LeerNota(id)
     
   
 	<!--Slide Vertical-->
-  <div class="DivVertical">
+  <div class="DivVertical" id="vertical_home">
     <div  class="ContenedorSlideVertical" id="content_slideVertical" >
      <!--
         se carga de php
@@ -765,7 +748,7 @@ function LeerNota(id)
   
   <div> 
       <div class="back_nacion SeccionSeccion" id="name_SeccionSeccion" style="color:#FFF;">
-        PUEBLA
+       
       </div>
    	<!--Slide Principal Plaza-->
       <div class="ContenedorPrincipalSeccion">
@@ -974,28 +957,6 @@ function LeerNota(id)
 </div>
 <!-- Fin Ubicacion-->
 
-<!--Video-->
-<div id="video" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
-  <div class="HeaderAlternativo">
-    <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
-    <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
-  </div>
-  <div style="height:93.5%; overflow:hidden;">
-    <div class="contvideogaleria">
-    
-     <!-- se carga cotenido de php -->
-    </div>
-    <script type="text/javascript">
-function cambiarvideo(url,titulo){
-  document.getElementById('videogaleria').innerHTML = '<div class="VideoTituloPrincipal"><strong>'+titulo+'</strong></div><object width="100%" height="49%"><param name="movie" value="'+url+'?fs=1&amp;hl=es_ES&amp;rel=0&amp;autoplay=1&modestbranding=1"/><param value="true" name="allowFullScreen"/><param value="always" name="allowscriptaccess"/><param value="transparent" name="wmode"/><embed width="100%" height="49%" wmode="transparent"  allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="'+url+'?fs=1&amp;hl=es_ES&amp;rel=0&amp;autoplay=1&showinfo=0&modestbranding=1"/></object>';
-return false;
-}
-</script> 
-  </div>
-</div>
-
-<!-- Fin Video-->
-
 
 
 <!--gia Nav-->
@@ -1031,7 +992,7 @@ return false;
 
 <!--Dialogo de Info--> 
 
-<a  class="overlayInfo" id="Info"></a>
+<a href="#home" class="overlayInfo" id="Info"></a>
 <div class="popupInfo" >
   <div class="HeadDialogoInfo"> Mensiones Legales </div>
   <div class="ContenidoDialogoInfo"> La aplicación Síntesis esta creada y editada por Asociación periodística Síntesis. 23 Sur y 25 Poniente #2504 Col. Volcanes. C.P: 72410.
@@ -1166,18 +1127,6 @@ return false;
   
   });
   
-    /* 3D Flow demos */
-/*$(function(){
-
-
-td1 = jQuery('.td1').swiper({
-slidesPerSlide:3,
-loop:true,
-tdFlow: {}
-})
-
-})
-*/
   
   
 
