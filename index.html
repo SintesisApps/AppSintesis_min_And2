@@ -155,41 +155,12 @@
 <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?sensor=true">
     </script>
-    <script type="text/javascript">
-      function initialize() 
-	  {
-		  document.addEventListener("deviceready",function()
-		  {
-			  //coneccion a  geolocalizacion
-			  navigator.geolocation.getCurrentPosition(function (loc) 
-			  {
-			 
-			  
-			  var myLatlng = new google.maps.LatLng(19.04327,-98.22035);
-			  //var myLatlng = new google.maps.LatLng(loc.coords.latitude,loc.coords.longitude);
-			  var mapOptions = {
-					zoom: 14,
-					center: myLatlng,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-			  }
-			  var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-			
-			  var marker = new google.maps.Marker({
-				  position: myLatlng,
-				  map: map,
-				  title:""
-			  });
-			  }, function (err){
-				  navigator.notification.alert(err.code, null, 'Error', 'Error!!');
-				  });
-		  }, false);
-      }
-    </script>
+    
     <!-- carga de noticias -->
     <script>
-			$(document).ready(function() {
+			$(document).ready(function(e) {
+				document.addEventListener("deviceready", function(){
 				
-
 				//alert("conexion:"+navigator.connection.type);
 					slidePrincipal();
 					slideMiniatura();
@@ -202,7 +173,7 @@
                
 				setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
 				
-				
+					});
 				
             });
 			
