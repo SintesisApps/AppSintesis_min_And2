@@ -160,7 +160,7 @@
     <script>
 			$(document).ready(function(e) {
 				document.addEventListener("deviceready", function(){
-				 //mantenemos el loding por 15 segundo
+				 //mantenemos el loding por 7 segundo
 				//alert("conexion:"+navigator.connection.type);
 					slidePrincipal();
 					/*slideMiniatura();*/
@@ -350,7 +350,7 @@
 				}
 				});
 			}
-		setInterval(function(){document.getElementById("cargando").style.display='none'},7000);
+		setInterval(function(){document.getElementById("cargando").style.display='none'},6000);
 		
 	} 
 	
@@ -436,7 +436,7 @@
 						/*$("#minuto_plaza").html(
 						datos[i].ultimas_noticias
 						);*/
-					setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
+					setInterval(function(){document.getElementById("cargando").style.display='none'},6000);
 						
 					}
 					
@@ -616,7 +616,7 @@ function LeerNota(id)
 					
 					$('.ExtrasPlaza').html(datos[i].nota_extra);
 					/*setInterval($('.ExtrasPlaza').html(datos[i].nota_extra),5000);*/
-					setInterval(function(){document.getElementById("cargando").style.display='none'},12000);
+					setInterval(function(){document.getElementById("cargando").style.display='none'},6000);
 					
 					}
 				
