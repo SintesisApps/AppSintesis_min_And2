@@ -210,7 +210,7 @@
 			{
 				$.ajax({
 						type: "POST",
-						url: "http://166.78.193.53/APPSintesis/php/CargarGaleriaImagenes2.php",
+						url: "http://166.78.193.53/RecursosApp/minandroid/php/CargarGaleriaImagenes2.php",
 						data: "",
 						cache: false,
 						success: function(message)
@@ -228,7 +228,7 @@
 				$('#cont_slideprincipal').html('<img src="imagenes/loading.gif" />');
 				 $.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/slideprincipal_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/slideprincipal_minand.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -245,7 +245,7 @@
 				/*SLIDE MINIATURAS*/
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/slide_miniatura.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/slide_miniatura.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -263,7 +263,7 @@
 				
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/slide_vertical_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/slide_vertical_minand.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -278,7 +278,7 @@
 			{
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/galeria_imagenes.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/galeria_imagenes.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -293,7 +293,7 @@
 
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/galeria_video.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/galeria_video.php",
 				//data: "",
 				data: "plaza="+plaza,
 				cache: false,
@@ -323,7 +323,7 @@
 			{
 				$.ajax({
 					type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/minutoaminuto.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/minutoaminuto.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -369,7 +369,7 @@
 				$('.DivVertical').html('<img src="imagenes/loading.gif" />');
 				$.ajax({
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/slide_vertical_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/slide_vertical_minand.php",
 				data: "",
 				cache: false,
 				success: function(message)
@@ -394,7 +394,7 @@
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/CargarNoticiasPlazas_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/CargarNoticiasPlazas_minand.php",
 				data: "plaza="+plaza,
 				cache: false,
 				success: function(message)
@@ -443,7 +443,7 @@
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/cargar_seccion_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/cargar_seccion_minand.php",
 				data: "seccion="+seccion,
 				cache: false,
 				success: function(message)
@@ -598,7 +598,7 @@ function LeerNota(id)
 			{
 
 				type: "POST",
-				url: "http://166.78.193.53/APPSintesis/php/Nota_minand.php",
+				url: "http://166.78.193.53/RecursosApp/minandroid/php/Nota_minand.php",
 				data: "id="+id,
 				cache: false,
 				success: function(message)
@@ -1031,9 +1031,7 @@ return false;
 
 <!--Dialogo de Info--> 
 
-<!--<a href="#home" class="overlayInfo" id="Info"></a>
--->
-<div class="overlayInfo" id="Info">
+<a href="#home" class="overlayInfo" id="Info"></a>
 <div class="popupInfo" >
   <div class="HeadDialogoInfo"> Mensiones Legales </div>
   <div class="ContenidoDialogoInfo"> La aplicación Síntesis esta creada y editada por Asociación periodística Síntesis. 23 Sur y 25 Poniente #2504 Col. Volcanes. C.P: 72410.
@@ -1051,8 +1049,8 @@ return false;
     Ésta publicación ha sido realizada por Desarrollo Síntesis.<br>
     <a href="javascript:;" onClick="pagDesarrollo();" data-theme="z" >
     <div style="color:#FFF; "> www.desarrollosintesis.com </div>
-    </a> <!--<a class="close" href="#home"></a> -->
-    <a class="close" href="javascript:;" onClick="$('#Info').css('right','-250%');"></a> 
+    </a> <a class="close" href="#home"></a> 
+    
   </div>
 </div>
 </div>
